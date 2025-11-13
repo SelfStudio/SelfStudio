@@ -1,5 +1,32 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import config from "@/lib/config";
+import { generateWebSiteStructuredData } from '@/lib/structuredData';
+
+export const metadata: Metadata = {
+  title: config.site.title,
+  description: config.site.description,
+  keywords: ["app", "mobile", "application", "software", "macOS", "iOS", "Android", "SelfStudio"],
+  openGraph: {
+    title: config.site.title,
+    description: config.site.description,
+    type: "website",
+    url: config.site.url || 'https://selfstudio.fun',
+    images: [
+      {
+        url: '/images/og-image.jpg', // 请替换为有效的JPG或PNG图片
+        width: 1200,
+        height: 630,
+        alt: config.site.title,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: config.site.title,
+    description: config.site.description,
+  },
+};
 
 // 直接在服务端组件中获取Bing壁纸数据
 async function fetchBingWallpaper() {
@@ -59,12 +86,17 @@ async function fetchBingWallpaper() {
 
 export default async function Home() {
   const wallpaperData = await fetchBingWallpaper();
+  const structuredData = generateWebSiteStructuredData();
   
   // 调试输出
   console.log('Wallpaper data received:', wallpaperData);
   
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* 背景图片容器 */}
       {wallpaperData?.imageUrl ? (
         <div 

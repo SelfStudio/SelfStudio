@@ -3,6 +3,7 @@ import Link from "next/link";
 import config, { AppConfig } from "@/lib/config";
 import AppStoreVersion from "./AppStoreVersion";
 import ScreenshotCarousel from "./ScreenshotCarousel";
+import { generateSoftwareApplicationStructuredData } from '@/lib/structuredData';
 
 type Props = {
   params: {
@@ -27,7 +28,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${app.name} - ${config.site.title}`,
     description: app.description,
-    keywords: ["app", "mobile", "application", app.name],
+    keywords: ["app", "mobile", "application", app.name, "download", "software"],
+    openGraph: {
+      title: `${app.name} - ${config.site.title}`,
+      description: app.description,
+      type: "website",
+      url: `${config.site.url || 'https://selfstudio.fun'}/${app.id}`,
+      images: [
+        {
+          url: app.icon,
+          width: 1200,
+          height: 630,
+          alt: app.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${app.name} - ${config.site.title}`,
+      description: app.description,
+    },
   };
 }
 
@@ -49,9 +69,14 @@ export default function AppPage({ params }: Props) {
 
   // 检查是否有任何下载链接
   const hasDownloadLinks = app.download.appStore || app.download.googlePlay || app.download.apk;
+  const structuredData = generateSoftwareApplicationStructuredData(app);
 
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <nav className="mb-8 text-sm text-gray-600">

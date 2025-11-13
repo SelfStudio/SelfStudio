@@ -1,0 +1,7 @@
+OG Image Requirements:
+- Format: JPG or PNG
+- Size: 1200x630 pixels
+- File name: og-image.jpg or og-image.png
+- Location: /public/images/ directory
+
+Please replace this file with a valid image.

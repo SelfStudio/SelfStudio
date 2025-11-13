@@ -1,7 +1,8 @@
 {
   "site": {
     "title": "SelfStudio",
-    "description": "App Collection for SelfStudio"
+    "description": "App Collection for SelfStudio",
+    "url": "https://selfstudio.fun"
   },
   "apps": [
     {

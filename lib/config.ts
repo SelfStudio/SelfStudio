@@ -68,6 +68,7 @@ export type SiteConfig = {
   site: {
     title: string;
     description: string;
+    url?: string;
   };
   apps: AppConfig[];
   contact: {
