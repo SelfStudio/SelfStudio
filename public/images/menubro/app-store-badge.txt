@@ -1,0 +1,9 @@
+Download the official Apple App Store badge from Apple's Marketing Guidelines:
+https://developer.apple.com/app-store/marketing/guidelines/
+
+The badge should be named "app-store-badge.svg" or "app-store-badge.png" and placed in this directory.
+
+Apple provides badges in multiple languages, so make sure to download the appropriate one for your target audience.
+
+For English: "Download on the Mac App Store" badge
+For Chinese: "从 Mac App Store 下载" badge

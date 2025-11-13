@@ -1,0 +1,180 @@
+{
+  "site": {
+    "title": "SelfStudio",
+    "description": "App Collection for SelfStudio"
+  },
+  "apps": [
+    {
+      "id": "menubro",
+      "appstoreId": "6745024185",
+      "name": "MenuBro",
+      "description": "Your Lightweight Menubar Browser",
+      "details": "Browse the web directly from your macOS menu bar. Fast, efficient, and always accessible.",
+      "icon": "/images/menubro/android-chrome-512x512.png",
+      "screenshots": [
+        "/images/menubro/hero-image.png",
+        "/images/menubro/hero-image-2.png"
+      ],
+      "download": {
+        "appStore": "https://apps.apple.com/us/app/menubro/id6745024185"
+      },
+      "features": [
+        {
+          "title": "Multi-Tab Browsing",
+          "description": "Open multiple websites simultaneously. Supports tab drag-and-drop sorting and pinning important tabs.",
+          "icon": "\ud83d\udcd1"
+        },
+        {
+          "title": "Multi-Screen Design",
+          "description": "Specially designed for multi-screen setups. Specify which screen windows appear on for optimal workflow.",
+          "icon": "\ud83d\udcbb"
+        },
+        {
+          "title": "Device Emulation",
+          "description": "Switch between different device types with appropriate user agents for desktop and mobile browsing.",
+          "icon": "\ud83d\udcf1"
+        },
+        {
+          "title": "Global Shortcuts",
+          "description": "Access MenuBro quickly with customizable keyboard shortcuts for efficient browsing.",
+          "icon": "\u2328\ufe0f"
+        },
+        {
+          "title": "Responsive Interface",
+          "description": "Clean, beautiful user interface that adapts to different content and supports light/dark modes.",
+          "icon": "\ud83c\udfa8"
+        },
+        {
+          "title": "Privacy Protection",
+          "description": "Enable additional privacy features to protect your browsing data when you step away.",
+          "icon": "\ud83d\udd12"
+        }
+      ],
+      "privacyPolicy": {
+        "lastUpdated": "2025-04-01",
+        "informationWeCollect": {
+          "title": "1. Information We Collect",
+          "content": "MenuBro (\"the App\") respects and protects your privacy rights. This Privacy Policy explains in detail how we collect, use, store, and protect your personal information. We may collect the following types of information:",
+          "items": ["Nothing"]
+        },
+        "howWeUseInformation": {
+          "title": "2. How We Use Information",
+          "content": "We may use the collected information for the following purposes:",
+          "items": ["Nothing we collect, nothing we use"]
+        },
+        "informationSharing": {
+          "title": "3. Information Sharing",
+          "content": "We do not sell your personal information to third parties. However, we may share your information in the following circumstances:",
+          "items": ["Do not share anything"]
+        },
+        "thirdPartyServices": {
+          "title": "4. Third-Party Services",
+          "content": "The App may link to third-party websites or services, such as social media platforms, analytics tools, etc.",
+          "items": ["No Third-Party Services"]
+        },
+        "dataSecurity": {
+          "title": "5. Data Security",
+          "content": "Not collect any data"
+        },
+        "yourRights": {
+          "title": "6. Your Rights",
+          "content": "Under applicable laws, you may have the following rights:",
+          "items": ["Anything yuou want"]
+        },
+        "contactUs": {
+          "title": "7. Contact Us",
+          "content": "If you have any questions, comments, or requests regarding this Privacy Policy, please contact us through the following methods:",
+          "email": "SelfStudioFun@gmail.com",
+          "address": "-"
+        },
+        "changesToPrivacyPolicy": {
+          "title": "8. Changes to Privacy Policy",
+          "content": "We may update this Privacy Policy from time to time. The updated policy will be posted on this page with the update date. We recommend that you review this policy regularly to stay informed of any changes."
+        }
+      }
+    },
+    {
+      "id": "numwise",
+      "appstoreId": "6745024185",
+      "name": "NumWise",
+      "description": "Smart calculator in your menubar",
+      "icon": "/images/numwise-icon.png",
+      "screenshots": [
+        "/images/menubro/hero-image.png",
+        "/images/menubro/hero-image-2.png"
+      ],
+      "download": {
+        "appStore": "[App Store Link]",
+        "googlePlay": "[Google Play Link]"
+      },
+      "features": [
+        {
+          "title": "[Feature Highlight 1]",
+          "description": "[Feature Description 1]",
+          "icon": "📱"
+        },
+        {
+          "title": "[Feature Highlight 2]",
+          "description": "[Feature Description 2]",
+          "icon": "🧮"
+        },
+        {
+          "title": "[Feature Highlight 3]",
+          "description": "[Feature Description 3]",
+          "icon": "⚡"
+        },
+        {
+          "title": "[Feature Highlight 4]",
+          "description": "[Feature Description 4]",
+          "icon": "🎨"
+        }
+      ],
+      "privacyPolicy": {
+        "lastUpdated": "2025-04-01",
+        "informationWeCollect": {
+          "title": "1. Information We Collect",
+          "content": "MenuBro (\"the App\") respects and protects your privacy rights. This Privacy Policy explains in detail how we collect, use, store, and protect your personal information. We may collect the following types of information:",
+          "items": ["Nothing"]
+        },
+        "howWeUseInformation": {
+          "title": "2. How We Use Information",
+          "content": "We may use the collected information for the following purposes:",
+          "items": ["Nothing we collect, nothing we use"]
+        },
+        "informationSharing": {
+          "title": "3. Information Sharing",
+          "content": "We do not sell your personal information to third parties. However, we may share your information in the following circumstances:",
+          "items": ["Do not share anything"]
+        },
+        "thirdPartyServices": {
+          "title": "4. Third-Party Services",
+          "content": "The App may link to third-party websites or services, such as social media platforms, analytics tools, etc.",
+          "items": ["No Third-Party Services"]
+        },
+        "dataSecurity": {
+          "title": "5. Data Security",
+          "content": "Not collect any data"
+        },
+        "yourRights": {
+          "title": "6. Your Rights",
+          "content": "Under applicable laws, you may have the following rights:",
+          "items": ["Anything yuou want"]
+        },
+        "contactUs": {
+          "title": "7. Contact Us",
+          "content": "If you have any questions, comments, or requests regarding this Privacy Policy, please contact us through the following methods:",
+          "email": "SelfStudioFun@gmail.com",
+          "address": "-"
+        },
+        "changesToPrivacyPolicy": {
+          "title": "8. Changes to Privacy Policy",
+          "content": "We may update this Privacy Policy from time to time. The updated policy will be posted on this page with the update date. We recommend that you review this policy regularly to stay informed of any changes."
+        }
+      }
+    }
+  ],
+  "contact": {
+    "email": "SelfStudioFun@gmail.com",
+    "address": "-"
+  }
+}

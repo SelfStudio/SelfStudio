@@ -1,8 +1,13 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import config from "@/lib/config";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Next.js on GitHub Pages',
-  description: 'Deploy your static Next.js site to GitHub Pages.',
+  title: config.site.title,
+  description: config.site.description,
 };
 
 export default function RootLayout({
@@ -12,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
