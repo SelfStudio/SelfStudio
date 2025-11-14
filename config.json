@@ -96,38 +96,39 @@
     },
     {
       "id": "numwise",
-      "appstoreId": "6745024185",
+      "appstoreId": "6754357532",
       "name": "NumWise",
-      "description": "Smart calculator in your menubar",
-      "icon": "/images/numwise-icon.png",
+      "description": "Convert numbers between different bases with ease. ",
+      "details": "NumWise is a powerful utility that allows you to convert numbers between binary, octal, decimal, and hexadecimal formats instantly.",
+      "icon": "/images/numwise/logo.png",
       "screenshots": [
-        "/images/menubro/hero-image.png",
-        "/images/menubro/hero-image-2.png"
+        "/images/numwise/hero-image.png",
+        "/images/numwise/hero-image-2.png",
+        "/images/numwise/hero-image-3.png"
       ],
       "download": {
-        "appStore": "[App Store Link]",
-        "googlePlay": "[Google Play Link]"
+        "appStore": "https://apps.apple.com/app/numwise/id6754357532"
       },
       "features": [
         {
-          "title": "[Feature Highlight 1]",
-          "description": "[Feature Description 1]",
-          "icon": "📱"
+          "title": "Multi-Radix Number Visualization",
+          "description": "Display numbers in different numeral systems (binary, octal,decimal, hexadecimal) with real-time conversion and visual representation of number structure.",
+          "icon": "\ud83d\udd22"
         },
         {
-          "title": "[Feature Highlight 2]",
-          "description": "[Feature Description 2]",
-          "icon": "🧮"
+          "title": "Binary Grouping Display",
+          "description": "Visualize binary representations with customizable grouping options to help understand bit patterns and structures.",
+          "icon": "\ud83d\udd04"
         },
         {
-          "title": "[Feature Highlight 3]",
-          "description": "[Feature Description 3]",
-          "icon": "⚡"
+          "title": "International Language Support",
+          "description": "Support for multiple languages including Arabic, Chinese, Japanese, Korean, and many European languages for global accessibility.",
+          "icon": "\ud83c\udf10"
         },
         {
-          "title": "[Feature Highlight 4]",
-          "description": "[Feature Description 4]",
-          "icon": "🎨"
+          "title": "Radix Indicator System",
+          "description": "Clear visual indicators showing the current numeral system being used with intuitive color coding and symbols.",
+          "icon": "\ud83d\udd39"
         }
       ],
       "privacyPolicy": {

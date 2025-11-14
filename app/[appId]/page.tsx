@@ -84,7 +84,7 @@ export default function AppPage({ params }: Props) {
           </nav>
           <div className="text-center mb-12">
             <div className="bg-gray-200 border-2 border-dashed rounded-xl w-24 h-24 mx-auto mb-6 flex items-center justify-center">
-              <img src={app.icon} alt={app.name} className="w-12 h-12 object-contain" />
+              <img src={app.icon} alt={app.name} className="rounded-xl object-contain" />
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">{app.name}</h1>
             <p className="text-xl text-gray-600">{app.description}</p>

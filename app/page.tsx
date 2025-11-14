@@ -125,7 +125,7 @@ export default async function Home() {
             <Link key={app.id} href={`/${app.id}`} className="block">
               <div className="bg-white/90 rounded-2xl p-8 border-2 border-transparent hover:border-orange-500 transition-all duration-300 shadow-lg hover:shadow-xl">
                 <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                  <img src={app.icon} alt={app.name} className="w-8 h-8 object-contain" />
+                  <img src={app.icon} alt={app.name} className="rounded-xl object-contain" />
                 </div>
                 <h2 className="text-2xl font-semibold mb-3 text-center">{app.name}</h2>
                 <p className="text-gray-600 text-center">{app.description}</p>
