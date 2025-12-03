@@ -196,7 +196,7 @@
     },
     {
       "id": "lucky",
-      "appstoreId": "",
+      "appstoreId": "6755509027",
       "name": "Lucky - Feel Your Luck",
       "description": "Test your fortune every day",
       "details": "Experience the thrill of testing your luck with our collection of classic fortune games. Whether you believe in luck or just want to have fun, Lucky brings you an authentic gaming experience with beautiful retro pixel art design featuring Random Number Challenge, Coin Flip, Sic Bo, Holy Cup Divination, and Fortune Sticks.",
@@ -207,7 +207,7 @@
         "/images/lucky/hero-image-3.png"
       ],
       "download": {
-        "appStore": ""
+        "appStore": "https://apps.apple.com/us/app/lucky-feel-your-luck/id6755509027"
       },
       "features": [
         {
