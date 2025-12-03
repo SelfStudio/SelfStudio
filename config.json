@@ -56,22 +56,30 @@
         "informationWeCollect": {
           "title": "1. Information We Collect",
           "content": "MenuBro (\"the App\") respects and protects your privacy rights. This Privacy Policy explains in detail how we collect, use, store, and protect your personal information. We may collect the following types of information:",
-          "items": ["Nothing"]
+          "items": [
+            "Nothing"
+          ]
         },
         "howWeUseInformation": {
           "title": "2. How We Use Information",
           "content": "We may use the collected information for the following purposes:",
-          "items": ["Nothing we collect, nothing we use"]
+          "items": [
+            "Nothing we collect, nothing we use"
+          ]
         },
         "informationSharing": {
           "title": "3. Information Sharing",
           "content": "We do not sell your personal information to third parties. However, we may share your information in the following circumstances:",
-          "items": ["Do not share anything"]
+          "items": [
+            "Do not share anything"
+          ]
         },
         "thirdPartyServices": {
           "title": "4. Third-Party Services",
           "content": "The App may link to third-party websites or services, such as social media platforms, analytics tools, etc.",
-          "items": ["No Third-Party Services"]
+          "items": [
+            "No Third-Party Services"
+          ]
         },
         "dataSecurity": {
           "title": "5. Data Security",
@@ -80,7 +88,9 @@
         "yourRights": {
           "title": "6. Your Rights",
           "content": "Under applicable laws, you may have the following rights:",
-          "items": ["Anything yuou want"]
+          "items": [
+            "Anything yuou want"
+          ]
         },
         "contactUs": {
           "title": "7. Contact Us",
@@ -136,22 +146,30 @@
         "informationWeCollect": {
           "title": "1. Information We Collect",
           "content": "MenuBro (\"the App\") respects and protects your privacy rights. This Privacy Policy explains in detail how we collect, use, store, and protect your personal information. We may collect the following types of information:",
-          "items": ["Nothing"]
+          "items": [
+            "Nothing"
+          ]
         },
         "howWeUseInformation": {
           "title": "2. How We Use Information",
           "content": "We may use the collected information for the following purposes:",
-          "items": ["Nothing we collect, nothing we use"]
+          "items": [
+            "Nothing we collect, nothing we use"
+          ]
         },
         "informationSharing": {
           "title": "3. Information Sharing",
           "content": "We do not sell your personal information to third parties. However, we may share your information in the following circumstances:",
-          "items": ["Do not share anything"]
+          "items": [
+            "Do not share anything"
+          ]
         },
         "thirdPartyServices": {
           "title": "4. Third-Party Services",
           "content": "The App may link to third-party websites or services, such as social media platforms, analytics tools, etc.",
-          "items": ["No Third-Party Services"]
+          "items": [
+            "No Third-Party Services"
+          ]
         },
         "dataSecurity": {
           "title": "5. Data Security",
@@ -160,7 +178,99 @@
         "yourRights": {
           "title": "6. Your Rights",
           "content": "Under applicable laws, you may have the following rights:",
-          "items": ["Anything yuou want"]
+          "items": [
+            "Anything yuou want"
+          ]
+        },
+        "contactUs": {
+          "title": "7. Contact Us",
+          "content": "If you have any questions, comments, or requests regarding this Privacy Policy, please contact us through the following methods:",
+          "email": "SelfStudioFun@gmail.com",
+          "address": "-"
+        },
+        "changesToPrivacyPolicy": {
+          "title": "8. Changes to Privacy Policy",
+          "content": "We may update this Privacy Policy from time to time. The updated policy will be posted on this page with the update date. We recommend that you review this policy regularly to stay informed of any changes."
+        }
+      }
+    },
+    {
+      "id": "lucky",
+      "appstoreId": "",
+      "name": "Lucky - Feel Your Luck",
+      "description": "Test your fortune every day",
+      "details": "Experience the thrill of testing your luck with our collection of classic fortune games. Whether you believe in luck or just want to have fun, Lucky brings you an authentic gaming experience with beautiful retro pixel art design featuring Random Number Challenge, Coin Flip, Sic Bo, Holy Cup Divination, and Fortune Sticks.",
+      "icon": "/images/lucky/icon.png",
+      "screenshots": [
+        "/images/lucky/hero-image-1.png",
+        "/images/lucky/hero-image-2.png",
+        "/images/lucky/hero-image-3.png"
+      ],
+      "download": {
+        "appStore": ""
+      },
+      "features": [
+        {
+          "title": "Random Number Challenge",
+          "description": "Draw random numbers until you hit your target. The fewer attempts, the luckier you are! Our unique 10-level luck scoring system (0-100) provides instant feedback on your fortune.",
+          "icon": "🎯"
+        },
+        {
+          "title": "Classic Fortune Games",
+          "description": "Experience authentic traditional games including Coin Flip, Sic Bo (骰宝), Holy Cup Divination (圣杯), and Fortune Sticks (求签) with stunning 3D animations.",
+          "icon": "🎲"
+        },
+        {
+          "title": "Retro Pixel Art Design",
+          "description": "Beautiful 8-bit pixel art design with smooth animations, haptic feedback, and support for 34+ languages for a nostalgic yet modern experience.",
+          "icon": "🎨"
+        },
+        {
+          "title": "Complete History Tracking",
+          "description": "Track all your lucky moments with complete game history. Share your best results with friends and review your fortune patterns over time.",
+          "icon": "📊"
+        }
+      ],
+      "privacyPolicy": {
+        "lastUpdated": "2025-04-01",
+        "informationWeCollect": {
+          "title": "1. Information We Collect",
+          "content": "Lucky (\"the App\") respects and protects your privacy rights. This Privacy Policy explains in detail how we collect, use, store, and protect your personal information. We may collect the following types of information:",
+          "items": [
+            "Nothing"
+          ]
+        },
+        "howWeUseInformation": {
+          "title": "2. How We Use Information",
+          "content": "We may use the collected information for the following purposes:",
+          "items": [
+            "Nothing we collect, nothing we use"
+          ]
+        },
+        "informationSharing": {
+          "title": "3. Information Sharing",
+          "content": "We do not sell your personal information to third parties. However, we may share your information in the following circumstances:",
+          "items": [
+            "Do not share anything"
+          ]
+        },
+        "thirdPartyServices": {
+          "title": "4. Third-Party Services",
+          "content": "The App may link to third-party websites or services, such as social media platforms, analytics tools, etc.",
+          "items": [
+            "No Third-Party Services"
+          ]
+        },
+        "dataSecurity": {
+          "title": "5. Data Security",
+          "content": "Not collect any data"
+        },
+        "yourRights": {
+          "title": "6. Your Rights",
+          "content": "Under applicable laws, you may have the following rights:",
+          "items": [
+            "Anything yuou want"
+          ]
         },
         "contactUs": {
           "title": "7. Contact Us",
