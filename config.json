@@ -283,6 +283,106 @@
           "content": "We may update this Privacy Policy from time to time. The updated policy will be posted on this page with the update date. We recommend that you review this policy regularly to stay informed of any changes."
         }
       }
+    },
+    {
+      "id": "paperboat",
+      "appstoreId": "6761174091",
+      "name": "PaperBoat",
+      "description": "Read EPUB, TXT, and PDF with immersive themes and natural voices.",
+      "details": "PaperBoat is a focused reading app for long-form text. Read quietly, listen naturally with system or online TTS voices, add notes and bookmarks, and stay in sync with your reading flow.",
+      "icon": "/images/paperboat/icon.png",
+      "screenshots": [
+        "/images/paperboat/support-en.png",
+        "/images/paperboat/support-en-tips.png"
+      ],
+      "download": {
+        "appStore": "https://apps.apple.com/app/id6761174091"
+      },
+      "features": [
+        {
+          "title": "Focused Reading",
+          "description": "Read EPUB, TXT, PDF, and long-form text with themes, typography controls, and continuous reading designed for immersion.",
+          "icon": "📚"
+        },
+        {
+          "title": "Natural Listening",
+          "description": "Switch between built-in system voices and compatible online TTS services to listen in the voice and style that fits you best.",
+          "icon": "🔊"
+        },
+        {
+          "title": "Notes and Progress",
+          "description": "Save highlights, annotations, and reading progress so your place is easy to recover across long sessions.",
+          "icon": "📝"
+        },
+        {
+          "title": "Supporter Features",
+          "description": "Optional support plans and tips help sustain development while keeping core reading features fully available.",
+          "icon": "⛵"
+        }
+      ],
+      "privacyPolicy": {
+        "lastUpdated": "2026-03-27",
+        "informationWeCollect": {
+          "title": "1. Information We Collect",
+          "content": "PaperBoat (\"the App\") is designed to keep reading data on your device whenever possible. We only process the information required to provide the features you choose to use.",
+          "items": [
+            "Reading content and progress stored locally on your device.",
+            "Optional account tokens or endpoint settings you enter for online text-to-speech providers.",
+            "Optional iCloud sync data if you enable Apple cloud synchronization.",
+            "Basic purchase status returned by Apple when you use in-app purchases or subscriptions."
+          ]
+        },
+        "howWeUseInformation": {
+          "title": "2. How We Use Information",
+          "content": "We use information only to operate the reading and listening features you enable.",
+          "items": [
+            "To open, render, and remember your reading position in books and documents.",
+            "To send text you choose to compatible online TTS services for synthesis when you enable those services.",
+            "To sync reading-related data through iCloud when you turn on sync.",
+            "To verify purchases, subscriptions, and supporter benefits through Apple systems."
+          ]
+        },
+        "informationSharing": {
+          "title": "3. Information Sharing",
+          "content": "We do not sell your personal information. Information is shared only when it is necessary to deliver a feature you explicitly use.",
+          "items": [
+            "Apple may process purchase, subscription, and iCloud data according to Apple's own policies.",
+            "Online TTS providers receive the text and configuration required to synthesize speech only when you choose to use them.",
+            "No reading data is shared with third parties for advertising."
+          ]
+        },
+        "thirdPartyServices": {
+          "title": "4. Third-Party Services",
+          "content": "Some optional features rely on third-party services selected by you.",
+          "items": [
+            "Apple services such as App Store purchases and iCloud sync.",
+            "Optional online TTS services or self-hosted compatible endpoints configured by the user."
+          ]
+        },
+        "dataSecurity": {
+          "title": "5. Data Security",
+          "content": "We use platform-provided storage and security mechanisms where available. Sensitive provider credentials you enter are stored on your device and are not used for purposes unrelated to the service configuration you selected."
+        },
+        "yourRights": {
+          "title": "6. Your Rights",
+          "content": "Depending on your region, you may have rights to access, correct, export, or delete your personal data.",
+          "items": [
+            "You can delete local reading data from the app or remove the app from your device.",
+            "You can remove configured TTS accounts and provider settings at any time.",
+            "You can manage Apple subscriptions through your Apple ID account settings."
+          ]
+        },
+        "contactUs": {
+          "title": "7. Contact Us",
+          "content": "If you have questions about this Privacy Policy or PaperBoat's data handling, contact us here:",
+          "email": "SelfStudioFun@gmail.com",
+          "address": "-"
+        },
+        "changesToPrivacyPolicy": {
+          "title": "8. Changes to Privacy Policy",
+          "content": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date."
+        }
+      }
     }
   ],
   "contact": {
