@@ -285,11 +285,11 @@
       }
     },
     {
-      "id": "paperboat",
+      "id": "storyboat",
       "appstoreId": "6761174091",
-      "name": "PaperBoat",
+      "name": "StoryBoat",
       "description": "Read EPUB, TXT, and PDF with immersive themes and natural voices.",
-      "details": "PaperBoat is a focused reading app for long-form text. Read quietly, listen naturally with system or online TTS voices, add notes and bookmarks, and stay in sync with your reading flow.",
+      "details": "StoryBoat is a focused reading app for long-form text. Read quietly, listen naturally with system or online TTS voices, add notes and bookmarks, and stay in sync with your reading flow.",
       "icon": "/images/paperboat/icon.png",
       "screenshots": [
         "/images/paperboat/support-en.png",
@@ -324,7 +324,7 @@
         "lastUpdated": "2026-03-27",
         "informationWeCollect": {
           "title": "1. Information We Collect",
-          "content": "PaperBoat (\"the App\") is designed to keep reading data on your device whenever possible. We only process the information required to provide the features you choose to use.",
+          "content": "StoryBoat (\"the App\") is designed to keep reading data on your device whenever possible. We only process the information required to provide the features you choose to use.",
           "items": [
             "Reading content and progress stored locally on your device.",
             "Optional account tokens or endpoint settings you enter for online text-to-speech providers.",
@@ -374,7 +374,7 @@
         },
         "contactUs": {
           "title": "7. Contact Us",
-          "content": "If you have questions about this Privacy Policy or PaperBoat's data handling, contact us here:",
+          "content": "If you have questions about this Privacy Policy or StoryBoat's data handling, contact us here:",
           "email": "SelfStudioFun@gmail.com",
           "address": "-"
         },
