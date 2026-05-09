@@ -4,8 +4,10 @@ import "./globals.css";
 import config from "@/lib/config";
 
 const inter = Inter({ subsets: ["latin"] });
+const siteUrl = new URL(config.site.url || "https://selfstudio.fun");
 
 export const metadata: Metadata = {
+  metadataBase: siteUrl,
   title: {
     default: config.site.title,
     template: `%s - ${config.site.title}`
@@ -19,6 +21,9 @@ export const metadata: Metadata = {
     email: false,
     address: false,
     telephone: false,
+  },
+  alternates: {
+    canonical: "/",
   },
 };
 

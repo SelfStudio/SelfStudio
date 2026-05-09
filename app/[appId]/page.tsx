@@ -24,21 +24,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: "App Not Found",
     };
   }
+
+  const description = app.details || app.description;
+  const image = app.screenshots[0] || app.icon;
   
   return {
-    title: `${app.name} - ${config.site.title}`,
-    description: app.description,
+    title: app.name,
+    description,
     keywords: ["app", "mobile", "application", app.name, "download", "software"],
+    alternates: {
+      canonical: `/${app.id}/`,
+    },
     openGraph: {
       title: `${app.name} - ${config.site.title}`,
-      description: app.description,
+      description,
       type: "website",
       url: `${config.site.url || 'https://selfstudio.fun'}/${app.id}`,
       images: [
         {
-          url: app.icon,
-          width: 1200,
-          height: 630,
+          url: image,
           alt: app.name,
         },
       ],
@@ -46,7 +50,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: `${app.name} - ${config.site.title}`,
-      description: app.description,
+      description,
+      images: [image],
     },
   };
 }

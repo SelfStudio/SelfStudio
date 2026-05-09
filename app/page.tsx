@@ -3,10 +3,17 @@ import { Metadata } from "next";
 import config from "@/lib/config";
 import { generateWebSiteStructuredData } from '@/lib/structuredData';
 
+const homeOgImage = config.apps[0]?.screenshots[0] || config.apps[0]?.icon || '/images/menubro/hero-image.png';
+
 export const metadata: Metadata = {
-  title: config.site.title,
+  title: {
+    absolute: config.site.title,
+  },
   description: config.site.description,
   keywords: ["app", "mobile", "application", "software", "macOS", "iOS", "Android", "SelfStudio"],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: config.site.title,
     description: config.site.description,
@@ -14,9 +21,7 @@ export const metadata: Metadata = {
     url: config.site.url || 'https://selfstudio.fun',
     images: [
       {
-        url: '/images/og-image.jpg', // 请替换为有效的JPG或PNG图片
-        width: 1200,
-        height: 630,
+        url: homeOgImage,
         alt: config.site.title,
       },
     ],
@@ -25,6 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: config.site.title,
     description: config.site.description,
+    images: [homeOgImage],
   },
 };
 

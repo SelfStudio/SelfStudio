@@ -23,9 +23,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   
   return {
-    title: `${app.name} Privacy Policy - ${config.site.title}`,
+    title: `${app.name} Privacy Policy`,
     description: `${app.name} Privacy Policy details how we collect, use, and protect your personal information.`,
     keywords: ["privacy", "policy", app.name, "data protection", "personal information"],
+    alternates: {
+      canonical: `/${app.id}/privacy/`,
+    },
     openGraph: {
       title: `${app.name} Privacy Policy - ${config.site.title}`,
       description: `${app.name} Privacy Policy details how we collect, use, and protect your personal information.`,
