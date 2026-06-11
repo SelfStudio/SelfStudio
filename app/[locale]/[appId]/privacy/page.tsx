@@ -99,7 +99,7 @@ export default function PrivacyPolicy({ params }: Props) {
           </div>
         </div>
 
-        <div className="rounded-3xl border border-gray-200/70 bg-white/80 p-8 leading-relaxed shadow-sm backdrop-blur dark:border-gray-800 dark:bg-gray-900/70 md:p-10">
+        <div className="rounded-3xl border border-hairline bg-paper-2 p-8 leading-relaxed shadow-sm md:p-10">
           <h2 className="mb-4 text-xl font-semibold">{privacyPolicy.informationWeCollect.title}</h2>
           <p className="mb-4 text-gray-600 dark:text-gray-300">{privacyPolicy.informationWeCollect.content}</p>
           <ul className="mb-8 list-disc ps-6 text-gray-600 dark:text-gray-300">

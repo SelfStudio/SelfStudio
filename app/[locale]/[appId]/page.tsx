@@ -7,7 +7,6 @@ import { languageAlternates } from "@/lib/alternates";
 import { generateSoftwareApplicationStructuredData } from "@/lib/structuredData";
 import AppStoreVersion from "./AppStoreVersion";
 import ScreenshotCarousel from "./ScreenshotCarousel";
-import GearMovement from "@/components/GearMovement";
 import SiteHeader from "@/components/SiteHeader";
 
 type Props = {
@@ -104,8 +103,6 @@ export default function AppPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <GearMovement />
-
       <div className="relative z-10">
         <SiteHeader
           back

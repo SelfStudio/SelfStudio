@@ -5,6 +5,7 @@ import "../globals.css";
 import config from "@/lib/config";
 import { getLocale, locales } from "@/lib/locales";
 import { getDictionary } from "@/lib/i18n";
+import GearMovement from "@/components/GearMovement";
 
 const newsreader = Newsreader({
   subsets: ["latin"],
@@ -75,6 +76,8 @@ export default function LocaleLayout({ children, params }: Props) {
       >
         <body className="font-sans antialiased">
           <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+          {/* 三维齿轮背景放在布局层：子页面切换时不会重新挂载 WebGL 场景 */}
+          <GearMovement />
           {children}
         </body>
       </html>

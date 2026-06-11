@@ -383,18 +383,14 @@ export default function GearMovement() {
   }, []);
 
   return (
-    <>
-      <div
-        ref={mountRef}
-        aria-hidden
-        className="fixed inset-0 -z-20 pointer-events-none"
-      />
+    // 独立的 view-transition 组：路由切换时 canvas 不参与根快照、持续实时渲染
+    <div aria-hidden className="fixed inset-0 -z-10 pointer-events-none [view-transition-name:ss-gears]">
+      <div ref={mountRef} className="absolute inset-0" />
       {/* readability veil over the movement */}
       <div
-        aria-hidden
-        className="fixed inset-0 -z-10 pointer-events-none"
+        className="absolute inset-0"
         style={{ background: "color-mix(in srgb, var(--paper) 48%, transparent)" }}
       />
-    </>
+    </div>
   );
 }
