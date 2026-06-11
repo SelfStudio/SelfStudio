@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Le nostre app",
-    "learnMore": "Scopri di più"
+    "learnMore": "Scopri di più",
+    "eyebrow": "Studio software indipendente",
+    "heroTitle": "Piccoli software, costruiti *affilati*.",
+    "stats": "{count} app · macOS e iPhone · dal {year}",
+    "storeLabel": "Store",
+    "storeSoon": "Licenze e articoli dello studio — presto."
   },
   "app": {
     "featuresHeading": "Funzioni principali",
@@ -15,7 +20,8 @@
     "loadingVersion": "Verifica dell'ultima versione…",
     "notFound": "App non trovata",
     "backHome": "Home",
-    "downloadApk": "Scarica APK"
+    "downloadApk": "Scarica APK",
+    "otherWorks": "Altri progetti"
   },
   "privacy": {
     "title": "Informativa sulla privacy",
@@ -30,6 +36,7 @@
     "contact": "Contatti"
   },
   "common": {
-    "language": "Lingua"
+    "language": "Lingua",
+    "toggleTheme": "Cambia tema"
   }
 }

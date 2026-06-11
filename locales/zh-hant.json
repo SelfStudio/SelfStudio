@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "我們的 App",
-    "learnMore": "瞭解更多"
+    "learnMore": "瞭解更多",
+    "eyebrow": "獨立軟體工作室",
+    "heroTitle": "小巧的軟體，打磨至*鋒利*。",
+    "stats": "{count} 款作品 · macOS 與 iPhone · 始於 {year}",
+    "storeLabel": "商店",
+    "storeSoon": "軟體授權與工作室周邊——即將推出。"
   },
   "app": {
     "featuresHeading": "主要功能",
@@ -15,7 +20,8 @@
     "loadingVersion": "正在檢查最新版本…",
     "notFound": "找不到該 App",
     "backHome": "首頁",
-    "downloadApk": "下載 APK"
+    "downloadApk": "下載 APK",
+    "otherWorks": "其他作品"
   },
   "privacy": {
     "title": "隱私權政策",
@@ -30,6 +36,7 @@
     "contact": "聯絡我們"
   },
   "common": {
-    "language": "語言"
+    "language": "語言",
+    "toggleTheme": "切換主題"
   }
 }

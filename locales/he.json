@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "האפליקציות שלנו",
-    "learnMore": "מידע נוסף"
+    "learnMore": "מידע נוסף",
+    "eyebrow": "סטודיו תוכנה עצמאי",
+    "heroTitle": "תוכנה קטנה, מלוטשת *היטב*.",
+    "stats": "{count} יצירות · macOS ו‑iPhone · מאז {year}",
+    "storeLabel": "חנות",
+    "storeSoon": "רישיונות ומוצרי הסטודיו — בקרוב."
   },
   "app": {
     "featuresHeading": "תכונות עיקריות",
@@ -15,7 +20,8 @@
     "loadingVersion": "בודקים את הגרסה העדכנית ביותר…",
     "notFound": "האפליקציה לא נמצאה",
     "backHome": "דף הבית",
-    "downloadApk": "הורדת APK"
+    "downloadApk": "הורדת APK",
+    "otherWorks": "עבודות נוספות"
   },
   "privacy": {
     "title": "מדיניות פרטיות",
@@ -30,6 +36,7 @@
     "contact": "יצירת קשר"
   },
   "common": {
-    "language": "שפה"
+    "language": "שפה",
+    "toggleTheme": "החלפת ערכת נושא"
   }
 }

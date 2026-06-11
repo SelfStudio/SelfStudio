@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Our Apps",
-    "learnMore": "Learn more"
+    "learnMore": "Learn more",
+    "eyebrow": "Independent software studio",
+    "heroTitle": "Small software, built *sharp*.",
+    "stats": "{count} releases · macOS & iPhone · since {year}",
+    "storeLabel": "Store",
+    "storeSoon": "Licenses & studio goods — soon."
   },
   "app": {
     "featuresHeading": "Main Features",
@@ -15,7 +20,8 @@
     "loadingVersion": "Checking the latest version…",
     "notFound": "App not found",
     "backHome": "Home",
-    "downloadApk": "Download APK"
+    "downloadApk": "Download APK",
+    "otherWorks": "Other works"
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -30,6 +36,7 @@
     "contact": "Contact"
   },
   "common": {
-    "language": "Language"
+    "language": "Language",
+    "toggleTheme": "Toggle theme"
   }
 }

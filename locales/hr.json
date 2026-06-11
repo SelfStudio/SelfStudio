@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Naše aplikacije",
-    "learnMore": "Saznajte više"
+    "learnMore": "Saznajte više",
+    "eyebrow": "Neovisni softverski studio",
+    "heroTitle": "Mali softver, *oštro* izbrušen.",
+    "stats": "{count} izdanja · macOS i iPhone · od {year}",
+    "storeLabel": "Trgovina",
+    "storeSoon": "Licence i studijski proizvodi — uskoro."
   },
   "app": {
     "featuresHeading": "Glavne značajke",
@@ -15,7 +20,8 @@
     "loadingVersion": "Provjera najnovije verzije…",
     "notFound": "Aplikacija nije pronađena",
     "backHome": "Početna",
-    "downloadApk": "Preuzmi APK"
+    "downloadApk": "Preuzmi APK",
+    "otherWorks": "Ostali radovi"
   },
   "privacy": {
     "title": "Pravila privatnosti",
@@ -30,6 +36,7 @@
     "contact": "Kontakt"
   },
   "common": {
-    "language": "Jezik"
+    "language": "Jezik",
+    "toggleTheme": "Promijeni temu"
   }
 }

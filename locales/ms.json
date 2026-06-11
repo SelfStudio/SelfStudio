@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Aplikasi Kami",
-    "learnMore": "Ketahui lebih lanjut"
+    "learnMore": "Ketahui lebih lanjut",
+    "eyebrow": "Studio perisian bebas",
+    "heroTitle": "Perisian kecil, dibina *tajam*.",
+    "stats": "{count} keluaran · macOS & iPhone · sejak {year}",
+    "storeLabel": "Kedai",
+    "storeSoon": "Lesen & barangan studio — tidak lama lagi."
   },
   "app": {
     "featuresHeading": "Ciri Utama",
@@ -15,7 +20,8 @@
     "loadingVersion": "Menyemak versi terkini…",
     "notFound": "Aplikasi tidak ditemui",
     "backHome": "Laman Utama",
-    "downloadApk": "Muat turun APK"
+    "downloadApk": "Muat turun APK",
+    "otherWorks": "Karya lain"
   },
   "privacy": {
     "title": "Dasar Privasi",
@@ -30,6 +36,7 @@
     "contact": "Hubungi Kami"
   },
   "common": {
-    "language": "Bahasa"
+    "language": "Bahasa",
+    "toggleTheme": "Tukar tema"
   }
 }

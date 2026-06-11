@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "我们的应用",
-    "learnMore": "了解更多"
+    "learnMore": "了解更多",
+    "eyebrow": "独立软件工作室",
+    "heroTitle": "小巧的软件，打磨至*锋利*。",
+    "stats": "{count} 款作品 · macOS 与 iPhone · 始于 {year}",
+    "storeLabel": "商店",
+    "storeSoon": "软件授权与工作室周边——即将上线。"
   },
   "app": {
     "featuresHeading": "主要功能",
@@ -15,7 +20,8 @@
     "loadingVersion": "正在检查最新版本…",
     "notFound": "未找到该应用",
     "backHome": "首页",
-    "downloadApk": "下载 APK"
+    "downloadApk": "下载 APK",
+    "otherWorks": "其他作品"
   },
   "privacy": {
     "title": "隐私政策",
@@ -30,6 +36,7 @@
     "contact": "联系我们"
   },
   "common": {
-    "language": "语言"
+    "language": "语言",
+    "toggleTheme": "切换主题"
   }
 }

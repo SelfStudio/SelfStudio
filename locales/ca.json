@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Les nostres apps",
-    "learnMore": "Més informació"
+    "learnMore": "Més informació",
+    "eyebrow": "Estudi de programari independent",
+    "heroTitle": "Programari petit, *esmolat* amb cura.",
+    "stats": "{count} apps · macOS i iPhone · des de {year}",
+    "storeLabel": "Botiga",
+    "storeSoon": "Llicències i articles de l'estudi — aviat."
   },
   "app": {
     "featuresHeading": "Funcions principals",
@@ -15,7 +20,8 @@
     "loadingVersion": "S'està comprovant la darrera versió…",
     "notFound": "No s'ha trobat l'aplicació",
     "backHome": "Inici",
-    "downloadApk": "Baixa l'APK"
+    "downloadApk": "Baixa l'APK",
+    "otherWorks": "Altres projectes"
   },
   "privacy": {
     "title": "Política de privadesa",
@@ -30,6 +36,7 @@
     "contact": "Contacte"
   },
   "common": {
-    "language": "Idioma"
+    "language": "Idioma",
+    "toggleTheme": "Canvia el tema"
   }
 }

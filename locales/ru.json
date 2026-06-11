@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Наши приложения",
-    "learnMore": "Подробнее"
+    "learnMore": "Подробнее",
+    "eyebrow": "Независимая студия разработки",
+    "heroTitle": "Маленькие программы, *остро* заточенные.",
+    "stats": "{count} приложения · macOS и iPhone · с {year} года",
+    "storeLabel": "Магазин",
+    "storeSoon": "Лицензии и товары студии — скоро."
   },
   "app": {
     "featuresHeading": "Основные функции",
@@ -15,7 +20,8 @@
     "loadingVersion": "Проверяем последнюю версию…",
     "notFound": "Приложение не найдено",
     "backHome": "Главная",
-    "downloadApk": "Скачать APK"
+    "downloadApk": "Скачать APK",
+    "otherWorks": "Другие работы"
   },
   "privacy": {
     "title": "Политика конфиденциальности",
@@ -30,6 +36,7 @@
     "contact": "Контакты"
   },
   "common": {
-    "language": "Язык"
+    "language": "Язык",
+    "toggleTheme": "Сменить тему"
   }
 }

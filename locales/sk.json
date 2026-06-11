@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Naše aplikácie",
-    "learnMore": "Zistiť viac"
+    "learnMore": "Zistiť viac",
+    "eyebrow": "Nezávislé softvérové štúdio",
+    "heroTitle": "Malý softvér, *ostro* vybrúsený.",
+    "stats": "{count} aplikácie · macOS a iPhone · od {year}",
+    "storeLabel": "Obchod",
+    "storeSoon": "Licencie a štúdiové produkty — už čoskoro."
   },
   "app": {
     "featuresHeading": "Hlavné funkcie",
@@ -15,7 +20,8 @@
     "loadingVersion": "Zisťuje sa najnovšia verzia…",
     "notFound": "Aplikácia sa nenašla",
     "backHome": "Domov",
-    "downloadApk": "Stiahnuť APK"
+    "downloadApk": "Stiahnuť APK",
+    "otherWorks": "Ďalšie projekty"
   },
   "privacy": {
     "title": "Zásady ochrany osobných údajov",
@@ -30,6 +36,7 @@
     "contact": "Kontakt"
   },
   "common": {
-    "language": "Jazyk"
+    "language": "Jazyk",
+    "toggleTheme": "Prepnúť motív"
   }
 }

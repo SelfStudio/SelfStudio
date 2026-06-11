@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Ứng dụng của chúng tôi",
-    "learnMore": "Tìm hiểu thêm"
+    "learnMore": "Tìm hiểu thêm",
+    "eyebrow": "Studio phần mềm độc lập",
+    "heroTitle": "Phần mềm nhỏ, được mài *sắc bén*.",
+    "stats": "{count} sản phẩm · macOS & iPhone · từ {year}",
+    "storeLabel": "Cửa hàng",
+    "storeSoon": "Giấy phép & quà lưu niệm studio — sắp ra mắt."
   },
   "app": {
     "featuresHeading": "Tính năng chính",
@@ -15,7 +20,8 @@
     "loadingVersion": "Đang kiểm tra phiên bản mới nhất…",
     "notFound": "Không tìm thấy ứng dụng",
     "backHome": "Trang chủ",
-    "downloadApk": "Tải APK"
+    "downloadApk": "Tải APK",
+    "otherWorks": "Sản phẩm khác"
   },
   "privacy": {
     "title": "Chính sách quyền riêng tư",
@@ -30,6 +36,7 @@
     "contact": "Liên hệ"
   },
   "common": {
-    "language": "Ngôn ngữ"
+    "language": "Ngôn ngữ",
+    "toggleTheme": "Đổi giao diện"
   }
 }

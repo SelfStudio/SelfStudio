@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "우리의 앱",
-    "learnMore": "자세히 보기"
+    "learnMore": "자세히 보기",
+    "eyebrow": "독립 소프트웨어 스튜디오",
+    "heroTitle": "작은 소프트웨어를 *날카롭게* 다듬다.",
+    "stats": "{count}개 작품 · macOS & iPhone · {year}년부터",
+    "storeLabel": "스토어",
+    "storeSoon": "라이선스와 스튜디오 굿즈 — 곧 만나요."
   },
   "app": {
     "featuresHeading": "주요 기능",
@@ -15,7 +20,8 @@
     "loadingVersion": "최신 버전 확인 중…",
     "notFound": "앱을 찾을 수 없습니다",
     "backHome": "홈",
-    "downloadApk": "APK 다운로드"
+    "downloadApk": "APK 다운로드",
+    "otherWorks": "다른 작품"
   },
   "privacy": {
     "title": "개인정보 처리방침",
@@ -30,6 +36,7 @@
     "contact": "문의하기"
   },
   "common": {
-    "language": "언어"
+    "language": "언어",
+    "toggleTheme": "테마 전환"
   }
 }
