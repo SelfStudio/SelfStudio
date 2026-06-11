@@ -2,16 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ===== SelfStudio design tokens (paper + terracotta) ===== */
+:root {
+  --paper: #f4efe6;
+  --paper-2: #faf6ee;
+  --paper-3: #eae3d3;
+  --ink: #1b1714;
+  --ink-2: #5c5249;
+  --ink-3: #8a7f73;
+  --hairline: #e0d8c7;
+  --hairline-2: #cfc5af;
+  --terracotta: #c5573a;
+  --terracotta-fg: #faf6ee;
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --paper: #1b1714;
+  --paper-2: #241f18;
+  --paper-3: #2c261d;
+  --ink: #f4efe6;
+  --ink-2: #b5a992;
+  --ink-3: #8a7f73;
+  --hairline: #2e2820;
+  --hairline-2: #4a4030;
+  --terracotta: #d2694c;
+  --terracotta-fg: #faf6ee;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+  transition: background-color 420ms ease, color 420ms ease;
+}
+::selection {
+  background: var(--terracotta);
+  color: var(--terracotta-fg);
+}
+
+/* ===== Seamless page transitions (driven by next-view-transitions) ===== */
+@keyframes ss-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes ss-fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+::view-transition-old(root) {
+  animation: 320ms cubic-bezier(0.2, 0.7, 0.2, 1) both ss-fade-out;
+}
+::view-transition-new(root) {
+  animation: 360ms cubic-bezier(0.2, 0.7, 0.2, 1) both ss-fade-in;
+}
+/* Shared element morph (app icon: card -> hero) */
+::view-transition-group(app-hero) {
+  animation-duration: 460ms;
+  animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+/* Wordmark stays anchored across navigation */
+::view-transition-group(ss-wordmark) {
+  animation-duration: 360ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+}
+
 /* 隐藏滚动条但保持功能 */
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
-}
-.feature-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
 }

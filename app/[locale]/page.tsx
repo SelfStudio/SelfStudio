@@ -1,16 +1,22 @@
-import Link from "next/link";
 import { Metadata } from "next";
 import config from "@/lib/config";
-import { getLocale } from "@/lib/locales";
+import { getLocale, locales } from "@/lib/locales";
 import { getDictionary, getLocalizedAppContent } from "@/lib/i18n";
 import { languageAlternates } from "@/lib/alternates";
 import { generateWebSiteStructuredData } from "@/lib/structuredData";
+import GearMovement from "@/components/GearMovement";
+import SiteHeader from "@/components/SiteHeader";
+import WorkCard from "@/components/WorkCard";
 
 type Props = {
   params: {
     locale: string;
   };
 };
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale: locale.slug }));
+}
 
 const homeOgImage =
   config.apps[0]?.screenshots[0] || config.apps[0]?.icon || "/images/menubro/hero-image.png";
@@ -56,55 +62,71 @@ export default function Home({ params }: Props) {
   const structuredData = generateWebSiteStructuredData(locale, dict.site.description);
 
   return (
-    <main className="container mx-auto px-4 pb-24 pt-20">
+    <div className="relative min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <GearMovement />
 
-      <section className="mx-auto mb-20 max-w-3xl text-center">
-        <h1 className="mb-6 text-5xl font-extrabold tracking-tight md:text-7xl">
-          <span className="bg-gradient-to-r from-orange-500 via-amber-500 to-rose-500 bg-clip-text text-transparent">
-            {config.site.title}
-          </span>
-        </h1>
-        <p className="text-xl leading-relaxed text-gray-600 dark:text-gray-300 md:text-2xl">
-          {dict.site.description}
-        </p>
-      </section>
+      <div className="relative z-10">
+        <SiteHeader localeSlug={locale.slug} languageLabel={dict.common.language} />
 
-      <section aria-label={dict.home.appsHeading}>
-        <h2 className="sr-only">{dict.home.appsHeading}</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {config.apps.map((app) => {
-            const content = getLocalizedAppContent(app, locale);
-            return (
-              <Link key={app.id} href={`/${locale.slug}/${app.id}/`} className="group block h-full">
-                <article className="flex h-full flex-col items-center rounded-3xl border border-gray-200/70 bg-white/80 p-8 text-center shadow-sm backdrop-blur transition-all duration-300 group-hover:-translate-y-1 group-hover:border-orange-400/70 group-hover:shadow-xl dark:border-gray-800 dark:bg-gray-900/70">
-                  <img
-                    src={app.icon}
-                    alt=""
-                    className="mb-6 h-20 w-20 rounded-2xl object-contain shadow-md"
-                  />
-                  <h3 className="mb-3 text-2xl font-semibold">{app.name}</h3>
-                  <p className="mb-6 flex-1 text-gray-600 dark:text-gray-300">
-                    {content.description}
-                  </p>
-                  <span className="inline-flex items-center gap-1.5 font-medium text-orange-500">
-                    {dict.home.learnMore}
-                    <span
-                      aria-hidden
-                      className="transition-transform group-hover:translate-x-0.5 rtl:rotate-180 rtl:group-hover:-translate-x-0.5"
-                    >
-                      →
-                    </span>
-                  </span>
-                </article>
-              </Link>
-            );
-          })}
-        </div>
-      </section>
-    </main>
+        <header className="mx-auto max-w-[1160px] px-10 pb-2 pt-[72px]">
+          <div className="mb-6 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.14em] text-ink-3">
+            <span className="h-[7px] w-[7px] rounded-full bg-terracotta" />
+            <span>Independent software studio</span>
+          </div>
+          <h1 className="max-w-[18ch] font-serif text-[clamp(42px,6vw,84px)] font-medium leading-[1.06]">
+            Small software, built{" "}
+            <span className="italic text-terracotta">sharp</span>.
+          </h1>
+          <p className="mt-5 max-w-[54ch] text-[17px] leading-[1.64] text-ink-2">
+            {dict.site.description}
+          </p>
+          <p className="mt-4 font-mono text-[12.5px] text-ink-3">
+            {config.apps.length} releases · macOS &amp; iPhone · since 2025
+          </p>
+        </header>
+
+        <section className="mx-auto max-w-[1160px] px-10 pb-14 pt-11" aria-label={dict.home.appsHeading}>
+          <h2 className="sr-only">{dict.home.appsHeading}</h2>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {config.apps.map((app, i) => {
+              const content = getLocalizedAppContent(app, locale);
+              return (
+                <WorkCard
+                  key={app.id}
+                  app={app}
+                  index={i}
+                  href={`/${locale.slug}/${app.id}/`}
+                  description={content.description}
+                />
+              );
+            })}
+          </div>
+
+          <div
+            className="mt-8 flex flex-wrap items-center gap-[18px] rounded-4 border border-hairline px-6 py-[18px]"
+            style={{ background: "color-mix(in srgb, var(--paper-2) 80%, transparent)", backdropFilter: "blur(6px)" }}
+          >
+            <span className="font-mono text-xs uppercase tracking-[0.14em] text-ink-3">Store</span>
+            <span className="text-[15px] text-ink-2">Licenses &amp; studio goods — soon.</span>
+            <div className="ml-auto flex flex-wrap items-center gap-2.5">
+              <span className="whitespace-nowrap rounded-md border border-hairline-2 px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.08em] text-ink-2">macOS license</span>
+              <span className="whitespace-nowrap rounded-md border border-hairline-2 px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.08em] text-ink-2">Studio goods</span>
+              <span className="whitespace-nowrap rounded-md border border-terracotta px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.08em] text-terracotta">Soon · Creem</span>
+            </div>
+          </div>
+        </section>
+
+        <footer className="mx-auto mt-[26vh] flex max-w-[1160px] flex-wrap items-center justify-between gap-5 px-10 py-6 font-mono text-xs text-ink-3">
+          <span>© 2026 SELFSTUDIO · {dict.footer.rights}</span>
+          <a href={`mailto:${config.contact.email}`} className="text-ink-3 no-underline hover:text-terracotta">
+            {config.contact.email.toUpperCase()}
+          </a>
+        </footer>
+      </div>
+    </div>
   );
 }
