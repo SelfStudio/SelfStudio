@@ -1,0 +1,35 @@
+{
+  "site": {
+    "description": "Apps met zorg gemaakt voor iPhone, iPad en Mac."
+  },
+  "home": {
+    "appsHeading": "Onze apps",
+    "learnMore": "Meer informatie"
+  },
+  "app": {
+    "featuresHeading": "Belangrijkste functies",
+    "screenshotsHeading": "Schermafbeeldingen",
+    "screenshotLabel": "Schermafbeelding",
+    "versionLabel": "Versie",
+    "releaseDateLabel": "Releasedatum",
+    "loadingVersion": "Nieuwste versie controleren…",
+    "notFound": "App niet gevonden",
+    "backHome": "Home",
+    "downloadApk": "APK downloaden"
+  },
+  "privacy": {
+    "title": "Privacybeleid",
+    "lastUpdated": "Laatst bijgewerkt",
+    "exerciseRights": "Om bovenstaande rechten uit te oefenen kunt u contact met ons opnemen via onderstaande contactgegevens.",
+    "emailLabel": "E-mail",
+    "addressLabel": "Adres",
+    "back": "Terug"
+  },
+  "footer": {
+    "rights": "Alle rechten voorbehouden.",
+    "contact": "Contact"
+  },
+  "common": {
+    "language": "Taal"
+  }
+}

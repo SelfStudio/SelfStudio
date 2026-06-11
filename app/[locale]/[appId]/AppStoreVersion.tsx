@@ -4,33 +4,41 @@ import { useEffect } from 'react';
 
 type AppStoreVersionProps = {
   appId: string;
+  lang: string;
+  versionLabel: string;
+  releaseDateLabel: string;
 };
 
-export default function AppStoreVersion({ appId }: AppStoreVersionProps) {
+export default function AppStoreVersion({
+  appId,
+  lang,
+  versionLabel,
+  releaseDateLabel,
+}: AppStoreVersionProps) {
   useEffect(() => {
     // 获取App Store版本信息 - 使用JSONP方式避免CORS问题
     function fetchAppStoreVersion() {
       // 创建script标签
       const script = document.createElement('script');
       const callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
-      
+
       // 设置全局回调函数
-      (window as any)[callbackName] = function(data: any) {
+      (window as any)[callbackName] = function (data: any) {
         try {
           if (data.results && data.results.length > 0) {
             const appInfo = data.results[0];
             const versionInfoElement = document.querySelector('.version-info');
-            
+
             if (versionInfoElement) {
-              // 格式化日期
+              // 按当前语言格式化日期
               const releaseDate = new Date(appInfo.currentVersionReleaseDate || appInfo.releaseDate);
-              const formattedDate = releaseDate.toLocaleDateString('en-US', {
+              const formattedDate = releaseDate.toLocaleDateString(lang, {
                 year: 'numeric',
                 month: 'long',
-                day: 'numeric'
+                day: 'numeric',
               });
-              
-              versionInfoElement.innerHTML = `Current Version: ${appInfo.version} | Release Date: ${formattedDate}`;
+
+              versionInfoElement.textContent = `${versionLabel} ${appInfo.version} · ${releaseDateLabel}: ${formattedDate}`;
             }
           }
         } catch (error) {
@@ -53,7 +61,7 @@ export default function AppStoreVersion({ appId }: AppStoreVersionProps) {
         document.head.removeChild(script);
         delete (window as any)[callbackName];
       };
-      
+
       document.head.appendChild(script);
 
       // 清理函数
@@ -66,7 +74,7 @@ export default function AppStoreVersion({ appId }: AppStoreVersionProps) {
     }
 
     fetchAppStoreVersion();
-  }, [appId]);
+  }, [appId, lang, versionLabel, releaseDateLabel]);
 
   return null; // 这个组件不渲染任何UI，只负责获取数据
 }

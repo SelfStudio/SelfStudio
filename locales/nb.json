@@ -1,0 +1,35 @@
+{
+  "site": {
+    "description": "Apper laget med omhu for iPhone, iPad og Mac."
+  },
+  "home": {
+    "appsHeading": "Appene våre",
+    "learnMore": "Les mer"
+  },
+  "app": {
+    "featuresHeading": "Hovedfunksjoner",
+    "screenshotsHeading": "Skjermbilder",
+    "screenshotLabel": "Skjermbilde",
+    "versionLabel": "Versjon",
+    "releaseDateLabel": "Utgivelsesdato",
+    "loadingVersion": "Ser etter nyeste versjon…",
+    "notFound": "Fant ikke appen",
+    "backHome": "Hjem",
+    "downloadApk": "Last ned APK"
+  },
+  "privacy": {
+    "title": "Personvernerklæring",
+    "lastUpdated": "Sist oppdatert",
+    "exerciseRights": "For å utøve rettighetene ovenfor kan du kontakte oss via kontaktinformasjonen nedenfor.",
+    "emailLabel": "E-post",
+    "addressLabel": "Adresse",
+    "back": "Tilbake"
+  },
+  "footer": {
+    "rights": "Med enerett.",
+    "contact": "Kontakt"
+  },
+  "common": {
+    "language": "Språk"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "site": {
+    "description": "แอปที่สร้างขึ้นอย่างพิถีพิถันสำหรับ iPhone, iPad และ Mac"
+  },
+  "home": {
+    "appsHeading": "แอปของเรา",
+    "learnMore": "ดูรายละเอียด"
+  },
+  "app": {
+    "featuresHeading": "ฟีเจอร์หลัก",
+    "screenshotsHeading": "ภาพหน้าจอ",
+    "screenshotLabel": "ภาพหน้าจอ",
+    "versionLabel": "เวอร์ชัน",
+    "releaseDateLabel": "วันที่เปิดตัว",
+    "loadingVersion": "กำลังตรวจสอบเวอร์ชันล่าสุด…",
+    "notFound": "ไม่พบแอป",
+    "backHome": "หน้าแรก",
+    "downloadApk": "ดาวน์โหลด APK"
+  },
+  "privacy": {
+    "title": "นโยบายความเป็นส่วนตัว",
+    "lastUpdated": "อัปเดตล่าสุด",
+    "exerciseRights": "หากต้องการใช้สิทธิ์ข้างต้น โปรดติดต่อเราตามข้อมูลติดต่อด้านล่าง",
+    "emailLabel": "อีเมล",
+    "addressLabel": "ที่อยู่",
+    "back": "ย้อนกลับ"
+  },
+  "footer": {
+    "rights": "สงวนลิขสิทธิ์",
+    "contact": "ติดต่อเรา"
+  },
+  "common": {
+    "language": "ภาษา"
+  }
+}

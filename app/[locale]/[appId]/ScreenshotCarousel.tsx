@@ -4,16 +4,22 @@ import { useState, useEffect, useRef } from 'react';
 
 type ScreenshotCarouselProps = {
   screenshots: string[];
+  heading: string;
+  screenshotLabel: string;
 };
 
-export default function ScreenshotCarousel({ screenshots }: ScreenshotCarouselProps) {
+export default function ScreenshotCarousel({
+  screenshots,
+  heading,
+  screenshotLabel,
+}: ScreenshotCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImageIndex, setModalImageIndex] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const autoPlayIntervalRef = useRef<NodeJS.Timeout | null>(null);
-  
+
   // 为无限滚动创建扩展的截图数组
   // 在开头添加最后一张图片，在末尾添加第一张图片作为虚拟图片
   const extendedScreenshots = [];
@@ -31,7 +37,7 @@ export default function ScreenshotCarousel({ screenshots }: ScreenshotCarouselPr
       const scrollPosition = scrollContainerRef.current.scrollLeft;
       const containerWidth = scrollContainerRef.current.clientWidth;
       let newIndex = Math.round(scrollPosition / containerWidth);
-      
+
       // 处理无限滚动的边界情况
       if (newIndex >= extendedScreenshots.length - 1 && screenshots.length > 1) {
         // 滚动到虚拟最后一张，立即跳转到实际第一张图片（在extended数组中是索引1）
@@ -69,7 +75,7 @@ export default function ScreenshotCarousel({ screenshots }: ScreenshotCarouselPr
           newIndex = 0;
         }
       }
-      
+
       setCurrentIndex(newIndex);
     }
   };
@@ -135,7 +141,7 @@ export default function ScreenshotCarousel({ screenshots }: ScreenshotCarouselPr
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!isModalOpen) return;
-      
+
       if (e.key === 'ArrowRight') {
         nextImage();
       } else if (e.key === 'ArrowLeft') {
@@ -168,7 +174,7 @@ export default function ScreenshotCarousel({ screenshots }: ScreenshotCarouselPr
         }
       }, 5000);
     }
-    
+
     return () => {
       if (autoPlayIntervalRef.current) {
         clearInterval(autoPlayIntervalRef.current);
@@ -187,81 +193,92 @@ export default function ScreenshotCarousel({ screenshots }: ScreenshotCarouselPr
     }
   }, [screenshots.length]);
 
+  if (screenshots.length === 0) {
+    return null;
+  }
+
   return (
-    <div className="mb-16">
-      <h2 className="text-2xl font-semibold mb-6 text-center">Screenshots</h2>
-      <div className="relative overflow-hidden rounded-xl">
-        <div 
+    <section className="mb-16">
+      <h2 className="mb-8 text-center text-2xl font-semibold md:text-3xl">{heading}</h2>
+      {/* 滚动逻辑基于 scrollLeft，固定 ltr 以兼容 RTL 语言 */}
+      <div className="relative overflow-hidden rounded-3xl" dir="ltr">
+        <div
           ref={scrollContainerRef}
           className="flex overflow-x-auto snap-mandatory snap-x scrollbar-hide gap-4 pb-4 scroll-smooth"
           style={{ scrollSnapType: 'x mandatory' }}
         >
           {extendedScreenshots.map((screenshot, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="snap-start flex-shrink-0 w-full"
               style={{ scrollSnapAlign: 'start' }}
             >
-              <div 
-                className="aspect-[16/9] bg-gray-200 border-2 border-dashed rounded-xl w-full cursor-pointer"
+              <div
+                className="aspect-[16/9] w-full cursor-zoom-in overflow-hidden rounded-3xl border border-gray-200/70 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-900"
                 onClick={() => openModal(index)}
               >
-                <img 
-                  src={screenshot} 
-                  alt={`Screenshot ${index + 1}`} 
+                <img
+                  src={screenshot}
+                  alt={`${screenshotLabel} ${index + 1}`}
                   className="w-full h-full object-cover"
                 />
               </div>
             </div>
           ))}
         </div>
-        <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
-        <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-gray-50 to-transparent dark:from-gray-950"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-gray-50 to-transparent dark:from-gray-950"></div>
       </div>
-      <div className="flex justify-center mt-4 space-x-2">
+      <div className="mt-4 flex justify-center gap-2">
         {screenshots.map((_, index) => (
           <button
             key={index}
             onClick={() => scrollToIndex(index)}
-            className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-              index === currentIndex ? 'bg-orange-500' : 'bg-gray-300'
+            className={`h-2.5 rounded-full transition-all duration-300 ${
+              index === currentIndex
+                ? 'w-6 bg-orange-500'
+                : 'w-2.5 bg-gray-300 hover:bg-gray-400 dark:bg-gray-700'
             }`}
-            aria-label={`Go to screenshot ${index + 1}`}
+            aria-label={`${screenshotLabel} ${index + 1}`}
           />
         ))}
       </div>
 
       {/* 图片放大模态框 */}
       {isModalOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
           onClick={closeModal}
+          dir="ltr"
         >
-          <div 
+          <div
             className="relative max-w-4xl max-h-full"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               className="absolute top-4 right-4 text-white text-3xl z-10"
               onClick={closeModal}
+              aria-label="×"
             >
               ×
             </button>
             <button
               className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-3xl z-10"
               onClick={prevImage}
+              aria-label="‹"
             >
               ‹
             </button>
             <button
               className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-3xl z-10"
               onClick={nextImage}
+              aria-label="›"
             >
               ›
             </button>
             <img
               src={screenshots[modalImageIndex]}
-              alt={`Screenshot ${modalImageIndex + 1}`}
+              alt={`${screenshotLabel} ${modalImageIndex + 1}`}
               className="max-w-full max-h-full object-contain"
             />
             <div className="absolute bottom-4 left-0 right-0 text-center text-white">
@@ -270,6 +287,6 @@ export default function ScreenshotCarousel({ screenshots }: ScreenshotCarouselPr
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 }

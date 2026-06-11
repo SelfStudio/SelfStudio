@@ -43,6 +43,16 @@ export type PrivacyPolicyConfig = {
   };
 };
 
+export type AppLocalization = {
+  description?: string;
+  details?: string;
+  features?: {
+    title: string;
+    description: string;
+    icon?: string;
+  }[];
+};
+
 export type AppConfig = {
   id: string;
   appstoreId: string;
@@ -61,6 +71,8 @@ export type AppConfig = {
     description: string;
     icon: string;
   }[];
+  // Optional translated marketing copy, keyed by dictionary id (e.g. "zh-hans").
+  localizations?: Record<string, AppLocalization>;
   privacyPolicy: PrivacyPolicyConfig;
 };
 

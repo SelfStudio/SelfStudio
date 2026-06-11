@@ -1,0 +1,35 @@
+{
+  "site": {
+    "description": "Gondosan készített alkalmazások iPhone-ra, iPadre és Macre."
+  },
+  "home": {
+    "appsHeading": "Alkalmazásaink",
+    "learnMore": "Tudjon meg többet"
+  },
+  "app": {
+    "featuresHeading": "Fő funkciók",
+    "screenshotsHeading": "Képernyőképek",
+    "screenshotLabel": "Képernyőkép",
+    "versionLabel": "Verzió",
+    "releaseDateLabel": "Megjelenés dátuma",
+    "loadingVersion": "A legújabb verzió ellenőrzése…",
+    "notFound": "Az alkalmazás nem található",
+    "backHome": "Kezdőlap",
+    "downloadApk": "APK letöltése"
+  },
+  "privacy": {
+    "title": "Adatvédelmi irányelvek",
+    "lastUpdated": "Utolsó frissítés",
+    "exerciseRights": "A fenti jogok gyakorlásához kérjük, lépjen kapcsolatba velünk az alábbi elérhetőségeken.",
+    "emailLabel": "E-mail",
+    "addressLabel": "Cím",
+    "back": "Vissza"
+  },
+  "footer": {
+    "rights": "Minden jog fenntartva.",
+    "contact": "Kapcsolat"
+  },
+  "common": {
+    "language": "Nyelv"
+  }
+}

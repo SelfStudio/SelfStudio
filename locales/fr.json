@@ -1,0 +1,35 @@
+{
+  "site": {
+    "description": "Des apps conçues avec soin pour iPhone, iPad et Mac."
+  },
+  "home": {
+    "appsHeading": "Nos apps",
+    "learnMore": "En savoir plus"
+  },
+  "app": {
+    "featuresHeading": "Fonctionnalités principales",
+    "screenshotsHeading": "Captures d'écran",
+    "screenshotLabel": "Capture d'écran",
+    "versionLabel": "Version",
+    "releaseDateLabel": "Date de sortie",
+    "loadingVersion": "Vérification de la dernière version…",
+    "notFound": "App introuvable",
+    "backHome": "Accueil",
+    "downloadApk": "Télécharger l'APK"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour",
+    "exerciseRights": "Pour exercer les droits ci-dessus, veuillez nous contacter via les coordonnées ci-dessous.",
+    "emailLabel": "E-mail",
+    "addressLabel": "Adresse",
+    "back": "Retour"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "contact": "Contact"
+  },
+  "common": {
+    "language": "Langue"
+  }
+}

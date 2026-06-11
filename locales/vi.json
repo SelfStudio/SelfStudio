@@ -1,0 +1,35 @@
+{
+  "site": {
+    "description": "Ứng dụng được tạo nên một cách chỉn chu cho iPhone, iPad và Mac."
+  },
+  "home": {
+    "appsHeading": "Ứng dụng của chúng tôi",
+    "learnMore": "Tìm hiểu thêm"
+  },
+  "app": {
+    "featuresHeading": "Tính năng chính",
+    "screenshotsHeading": "Ảnh chụp màn hình",
+    "screenshotLabel": "Ảnh chụp màn hình",
+    "versionLabel": "Phiên bản",
+    "releaseDateLabel": "Ngày phát hành",
+    "loadingVersion": "Đang kiểm tra phiên bản mới nhất…",
+    "notFound": "Không tìm thấy ứng dụng",
+    "backHome": "Trang chủ",
+    "downloadApk": "Tải APK"
+  },
+  "privacy": {
+    "title": "Chính sách quyền riêng tư",
+    "lastUpdated": "Cập nhật lần cuối",
+    "exerciseRights": "Để thực hiện các quyền nêu trên, vui lòng liên hệ với chúng tôi theo thông tin liên hệ bên dưới.",
+    "emailLabel": "Email",
+    "addressLabel": "Địa chỉ",
+    "back": "Quay lại"
+  },
+  "footer": {
+    "rights": "Bảo lưu mọi quyền.",
+    "contact": "Liên hệ"
+  },
+  "common": {
+    "language": "Ngôn ngữ"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "site": {
+    "description": "為 iPhone、iPad 和 Mac 用心打造的 App。"
+  },
+  "home": {
+    "appsHeading": "我們的 App",
+    "learnMore": "瞭解更多"
+  },
+  "app": {
+    "featuresHeading": "主要功能",
+    "screenshotsHeading": "App 截圖",
+    "screenshotLabel": "截圖",
+    "versionLabel": "版本",
+    "releaseDateLabel": "發佈日期",
+    "loadingVersion": "正在檢查最新版本…",
+    "notFound": "找不到該 App",
+    "backHome": "首頁",
+    "downloadApk": "下載 APK"
+  },
+  "privacy": {
+    "title": "隱私權政策",
+    "lastUpdated": "最後更新",
+    "exerciseRights": "如需行使上述權利，請透過以下聯絡方式與我們聯繫。",
+    "emailLabel": "電子郵件",
+    "addressLabel": "地址",
+    "back": "返回"
+  },
+  "footer": {
+    "rights": "版權所有。",
+    "contact": "聯絡我們"
+  },
+  "common": {
+    "language": "語言"
+  }
+}

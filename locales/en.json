@@ -1,0 +1,35 @@
+{
+  "site": {
+    "description": "Apps crafted with care for iPhone, iPad, and Mac."
+  },
+  "home": {
+    "appsHeading": "Our Apps",
+    "learnMore": "Learn more"
+  },
+  "app": {
+    "featuresHeading": "Main Features",
+    "screenshotsHeading": "Screenshots",
+    "screenshotLabel": "Screenshot",
+    "versionLabel": "Version",
+    "releaseDateLabel": "Release date",
+    "loadingVersion": "Checking the latest version…",
+    "notFound": "App not found",
+    "backHome": "Home",
+    "downloadApk": "Download APK"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "exerciseRights": "To exercise the rights above, please reach us using the contact details below.",
+    "emailLabel": "Email",
+    "addressLabel": "Address",
+    "back": "Back"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "contact": "Contact"
+  },
+  "common": {
+    "language": "Language"
+  }
+}
