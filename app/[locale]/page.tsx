@@ -4,7 +4,6 @@ import { getLocale, locales } from "@/lib/locales";
 import { getDictionary, getLocalizedAppContent } from "@/lib/i18n";
 import { languageAlternates } from "@/lib/alternates";
 import { generateWebSiteStructuredData } from "@/lib/structuredData";
-import GearMovement from "@/components/GearMovement";
 import SiteHeader from "@/components/SiteHeader";
 import WorkCard from "@/components/WorkCard";
 
@@ -80,8 +79,6 @@ export default function Home({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <GearMovement />
-
       <div className="relative z-10">
         <SiteHeader
           localeSlug={locale.slug}

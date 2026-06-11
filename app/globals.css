@@ -68,6 +68,15 @@ body {
 ::view-transition-group(ss-wordmark) {
   animation-duration: 360ms;
 }
+/* Gear background persists across routes: skip its snapshot crossfade so the
+   live canvas keeps animating during the transition. */
+::view-transition-old(ss-gears) {
+  animation: none;
+  opacity: 0;
+}
+::view-transition-new(ss-gears) {
+  animation: none;
+}
 
 @media (prefers-reduced-motion: reduce) {
   ::view-transition-group(*),
