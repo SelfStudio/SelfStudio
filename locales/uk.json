@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Наші застосунки",
-    "learnMore": "Докладніше"
+    "learnMore": "Докладніше",
+    "eyebrow": "Незалежна студія розробки",
+    "heroTitle": "Маленькі програми, *гостро* відточені.",
+    "stats": "{count} застосунки · macOS і iPhone · з {year} року",
+    "storeLabel": "Магазин",
+    "storeSoon": "Ліцензії та товари студії — незабаром."
   },
   "app": {
     "featuresHeading": "Основні функції",
@@ -15,7 +20,8 @@
     "loadingVersion": "Перевіряємо останню версію…",
     "notFound": "Застосунок не знайдено",
     "backHome": "Головна",
-    "downloadApk": "Завантажити APK"
+    "downloadApk": "Завантажити APK",
+    "otherWorks": "Інші роботи"
   },
   "privacy": {
     "title": "Політика конфіденційності",
@@ -30,6 +36,7 @@
     "contact": "Контакти"
   },
   "common": {
-    "language": "Мова"
+    "language": "Мова",
+    "toggleTheme": "Змінити тему"
   }
 }

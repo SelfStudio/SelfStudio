@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "アプリ一覧",
-    "learnMore": "詳しく見る"
+    "learnMore": "詳しく見る",
+    "eyebrow": "独立系ソフトウェアスタジオ",
+    "heroTitle": "小さなソフトウェアを、*鋭く*仕上げる。",
+    "stats": "{count} 作品 · macOS & iPhone · {year} 年から",
+    "storeLabel": "ストア",
+    "storeSoon": "ライセンスとスタジオグッズ — 近日公開。"
   },
   "app": {
     "featuresHeading": "主な機能",
@@ -15,7 +20,8 @@
     "loadingVersion": "最新バージョンを確認中…",
     "notFound": "アプリが見つかりません",
     "backHome": "ホーム",
-    "downloadApk": "APK をダウンロード"
+    "downloadApk": "APK をダウンロード",
+    "otherWorks": "その他の作品"
   },
   "privacy": {
     "title": "プライバシーポリシー",
@@ -30,6 +36,7 @@
     "contact": "お問い合わせ"
   },
   "common": {
-    "language": "言語"
+    "language": "言語",
+    "toggleTheme": "テーマを切り替える"
   }
 }

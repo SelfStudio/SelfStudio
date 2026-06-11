@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Våra appar",
-    "learnMore": "Läs mer"
+    "learnMore": "Läs mer",
+    "eyebrow": "Oberoende mjukvarustudio",
+    "heroTitle": "Små program, byggda *vassa*.",
+    "stats": "{count} appar · macOS & iPhone · sedan {year}",
+    "storeLabel": "Butik",
+    "storeSoon": "Licenser och studioprylar — snart."
   },
   "app": {
     "featuresHeading": "Huvudfunktioner",
@@ -15,7 +20,8 @@
     "loadingVersion": "Söker efter senaste versionen…",
     "notFound": "Appen hittades inte",
     "backHome": "Hem",
-    "downloadApk": "Ladda ned APK"
+    "downloadApk": "Ladda ned APK",
+    "otherWorks": "Andra projekt"
   },
   "privacy": {
     "title": "Integritetspolicy",
@@ -30,6 +36,7 @@
     "contact": "Kontakt"
   },
   "common": {
-    "language": "Språk"
+    "language": "Språk",
+    "toggleTheme": "Byt tema"
   }
 }

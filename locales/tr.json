@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Uygulamalarımız",
-    "learnMore": "Daha fazla bilgi"
+    "learnMore": "Daha fazla bilgi",
+    "eyebrow": "Bağımsız yazılım stüdyosu",
+    "heroTitle": "Küçük yazılımlar, *keskin* işçilikle.",
+    "stats": "{count} uygulama · macOS ve iPhone · {year}'ten bu yana",
+    "storeLabel": "Mağaza",
+    "storeSoon": "Lisanslar ve stüdyo ürünleri — yakında."
   },
   "app": {
     "featuresHeading": "Temel Özellikler",
@@ -15,7 +20,8 @@
     "loadingVersion": "En son sürüm denetleniyor…",
     "notFound": "Uygulama bulunamadı",
     "backHome": "Ana Sayfa",
-    "downloadApk": "APK indir"
+    "downloadApk": "APK indir",
+    "otherWorks": "Diğer çalışmalar"
   },
   "privacy": {
     "title": "Gizlilik Politikası",
@@ -30,6 +36,7 @@
     "contact": "İletişim"
   },
   "common": {
-    "language": "Dil"
+    "language": "Dil",
+    "toggleTheme": "Temayı değiştir"
   }
 }

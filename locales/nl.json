@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Onze apps",
-    "learnMore": "Meer informatie"
+    "learnMore": "Meer informatie",
+    "eyebrow": "Onafhankelijke softwarestudio",
+    "heroTitle": "Kleine software, *scherp* gebouwd.",
+    "stats": "{count} releases · macOS & iPhone · sinds {year}",
+    "storeLabel": "Winkel",
+    "storeSoon": "Licenties & studio-artikelen — binnenkort."
   },
   "app": {
     "featuresHeading": "Belangrijkste functies",
@@ -15,7 +20,8 @@
     "loadingVersion": "Nieuwste versie controleren…",
     "notFound": "App niet gevonden",
     "backHome": "Home",
-    "downloadApk": "APK downloaden"
+    "downloadApk": "APK downloaden",
+    "otherWorks": "Ander werk"
   },
   "privacy": {
     "title": "Privacybeleid",
@@ -30,6 +36,7 @@
     "contact": "Contact"
   },
   "common": {
-    "language": "Taal"
+    "language": "Taal",
+    "toggleTheme": "Thema wisselen"
   }
 }

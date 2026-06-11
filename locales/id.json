@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Aplikasi Kami",
-    "learnMore": "Pelajari lebih lanjut"
+    "learnMore": "Pelajari lebih lanjut",
+    "eyebrow": "Studio perangkat lunak independen",
+    "heroTitle": "Perangkat lunak kecil, dibuat *tajam*.",
+    "stats": "{count} rilis · macOS & iPhone · sejak {year}",
+    "storeLabel": "Toko",
+    "storeSoon": "Lisensi & merchandise studio — segera."
   },
   "app": {
     "featuresHeading": "Fitur Utama",
@@ -15,7 +20,8 @@
     "loadingVersion": "Memeriksa versi terbaru…",
     "notFound": "Aplikasi tidak ditemukan",
     "backHome": "Beranda",
-    "downloadApk": "Unduh APK"
+    "downloadApk": "Unduh APK",
+    "otherWorks": "Karya lainnya"
   },
   "privacy": {
     "title": "Kebijakan Privasi",
@@ -30,6 +36,7 @@
     "contact": "Kontak"
   },
   "common": {
-    "language": "Bahasa"
+    "language": "Bahasa",
+    "toggleTheme": "Ganti tema"
   }
 }

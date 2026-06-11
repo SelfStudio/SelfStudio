@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Alkalmazásaink",
-    "learnMore": "Tudjon meg többet"
+    "learnMore": "Tudjon meg többet",
+    "eyebrow": "Független szoftverstúdió",
+    "heroTitle": "Kis szoftverek, *élesre* csiszolva.",
+    "stats": "{count} alkalmazás · macOS és iPhone · {year} óta",
+    "storeLabel": "Bolt",
+    "storeSoon": "Licencek és stúdiótermékek — hamarosan."
   },
   "app": {
     "featuresHeading": "Fő funkciók",
@@ -15,7 +20,8 @@
     "loadingVersion": "A legújabb verzió ellenőrzése…",
     "notFound": "Az alkalmazás nem található",
     "backHome": "Kezdőlap",
-    "downloadApk": "APK letöltése"
+    "downloadApk": "APK letöltése",
+    "otherWorks": "További munkák"
   },
   "privacy": {
     "title": "Adatvédelmi irányelvek",
@@ -30,6 +36,7 @@
     "contact": "Kapcsolat"
   },
   "common": {
-    "language": "Nyelv"
+    "language": "Nyelv",
+    "toggleTheme": "Téma váltása"
   }
 }

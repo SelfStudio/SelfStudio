@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Οι εφαρμογές μας",
-    "learnMore": "Μάθετε περισσότερα"
+    "learnMore": "Μάθετε περισσότερα",
+    "eyebrow": "Ανεξάρτητο στούντιο λογισμικού",
+    "heroTitle": "Μικρό λογισμικό, φτιαγμένο *κοφτερό*.",
+    "stats": "{count} εφαρμογές · macOS & iPhone · από το {year}",
+    "storeLabel": "Κατάστημα",
+    "storeSoon": "Άδειες χρήσης και προϊόντα του στούντιο — σύντομα."
   },
   "app": {
     "featuresHeading": "Κύριες λειτουργίες",
@@ -15,7 +20,8 @@
     "loadingVersion": "Έλεγχος για την πιο πρόσφατη έκδοση…",
     "notFound": "Η εφαρμογή δεν βρέθηκε",
     "backHome": "Αρχική",
-    "downloadApk": "Λήψη APK"
+    "downloadApk": "Λήψη APK",
+    "otherWorks": "Άλλα έργα"
   },
   "privacy": {
     "title": "Πολιτική απορρήτου",
@@ -30,6 +36,7 @@
     "contact": "Επικοινωνία"
   },
   "common": {
-    "language": "Γλώσσα"
+    "language": "Γλώσσα",
+    "toggleTheme": "Εναλλαγή θέματος"
   }
 }

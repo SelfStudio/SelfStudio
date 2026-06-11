@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "تطبيقاتنا",
-    "learnMore": "اعرف المزيد"
+    "learnMore": "اعرف المزيد",
+    "eyebrow": "استوديو برمجيات مستقل",
+    "heroTitle": "برمجيات صغيرة، صُنعت *بإتقان*.",
+    "stats": "{count} إصدارات · macOS وiPhone · منذ {year}",
+    "storeLabel": "المتجر",
+    "storeSoon": "التراخيص ومنتجات الاستوديو — قريبًا."
   },
   "app": {
     "featuresHeading": "الميزات الرئيسية",
@@ -15,7 +20,8 @@
     "loadingVersion": "جارٍ التحقق من أحدث إصدار…",
     "notFound": "التطبيق غير موجود",
     "backHome": "الرئيسية",
-    "downloadApk": "تنزيل APK"
+    "downloadApk": "تنزيل APK",
+    "otherWorks": "أعمال أخرى"
   },
   "privacy": {
     "title": "سياسة الخصوصية",
@@ -30,6 +36,7 @@
     "contact": "تواصل معنا"
   },
   "common": {
-    "language": "اللغة"
+    "language": "اللغة",
+    "toggleTheme": "تبديل المظهر"
   }
 }

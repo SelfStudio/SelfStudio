@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Sovelluksemme",
-    "learnMore": "Lue lisää"
+    "learnMore": "Lue lisää",
+    "eyebrow": "Riippumaton ohjelmistostudio",
+    "heroTitle": "Pieniä ohjelmia, hiottu *teräviksi*.",
+    "stats": "{count} julkaisua · macOS & iPhone · vuodesta {year}",
+    "storeLabel": "Kauppa",
+    "storeSoon": "Lisenssit ja studiotuotteet — tulossa pian."
   },
   "app": {
     "featuresHeading": "Tärkeimmät ominaisuudet",
@@ -15,7 +20,8 @@
     "loadingVersion": "Tarkistetaan uusinta versiota…",
     "notFound": "Sovellusta ei löytynyt",
     "backHome": "Etusivu",
-    "downloadApk": "Lataa APK"
+    "downloadApk": "Lataa APK",
+    "otherWorks": "Muut työt"
   },
   "privacy": {
     "title": "Tietosuojakäytäntö",
@@ -30,6 +36,7 @@
     "contact": "Yhteystiedot"
   },
   "common": {
-    "language": "Kieli"
+    "language": "Kieli",
+    "toggleTheme": "Vaihda teemaa"
   }
 }

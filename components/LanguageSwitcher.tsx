@@ -25,7 +25,7 @@ export default function LanguageSwitcher({ currentSlug, label }: LanguageSwitche
   };
 
   return (
-    <label className="inline-flex items-center gap-2 text-sm text-gray-600 dark:text-gray-300">
+    <label className="inline-flex items-center gap-2 text-sm text-ink-2">
       <span className="sr-only">{label}</span>
       <svg
         aria-hidden="true"
@@ -44,7 +44,7 @@ export default function LanguageSwitcher({ currentSlug, label }: LanguageSwitche
       <select
         value={currentSlug}
         onChange={(e) => switchLocale(e.target.value)}
-        className="max-w-[11rem] cursor-pointer appearance-none rounded-full border border-gray-200 bg-white/70 px-3 py-1.5 text-sm text-gray-700 shadow-sm backdrop-blur transition-colors hover:border-orange-400 focus:border-orange-500 focus:outline-none dark:border-gray-700 dark:bg-gray-900/70 dark:text-gray-200"
+        className="max-w-[11rem] cursor-pointer appearance-none rounded-md border border-hairline-2 bg-paper-2 px-3 py-1.5 text-sm text-ink shadow-sm backdrop-blur transition-colors hover:border-terracotta focus:border-terracotta focus:outline-none"
       >
         {locales.map((locale) => (
           <option key={locale.slug} value={locale.slug}>

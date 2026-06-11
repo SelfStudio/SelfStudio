@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Aplicațiile noastre",
-    "learnMore": "Află mai multe"
+    "learnMore": "Află mai multe",
+    "eyebrow": "Studio independent de software",
+    "heroTitle": "Software mic, construit *ascuțit*.",
+    "stats": "{count} aplicații · macOS și iPhone · din {year}",
+    "storeLabel": "Magazin",
+    "storeSoon": "Licențe și produse de studio — în curând."
   },
   "app": {
     "featuresHeading": "Funcții principale",
@@ -15,7 +20,8 @@
     "loadingVersion": "Se verifică cea mai recentă versiune…",
     "notFound": "Aplicația nu a fost găsită",
     "backHome": "Acasă",
-    "downloadApk": "Descarcă APK"
+    "downloadApk": "Descarcă APK",
+    "otherWorks": "Alte proiecte"
   },
   "privacy": {
     "title": "Politica de confidențialitate",
@@ -30,6 +36,7 @@
     "contact": "Contact"
   },
   "common": {
-    "language": "Limbă"
+    "language": "Limbă",
+    "toggleTheme": "Schimbă tema"
   }
 }

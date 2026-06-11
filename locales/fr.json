@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Nos apps",
-    "learnMore": "En savoir plus"
+    "learnMore": "En savoir plus",
+    "eyebrow": "Studio logiciel indépendant",
+    "heroTitle": "De petits logiciels, *affûtés* avec soin.",
+    "stats": "{count} apps · macOS & iPhone · depuis {year}",
+    "storeLabel": "Boutique",
+    "storeSoon": "Licences et objets du studio — bientôt."
   },
   "app": {
     "featuresHeading": "Fonctionnalités principales",
@@ -15,7 +20,8 @@
     "loadingVersion": "Vérification de la dernière version…",
     "notFound": "App introuvable",
     "backHome": "Accueil",
-    "downloadApk": "Télécharger l'APK"
+    "downloadApk": "Télécharger l'APK",
+    "otherWorks": "Autres créations"
   },
   "privacy": {
     "title": "Politique de confidentialité",
@@ -30,6 +36,7 @@
     "contact": "Contact"
   },
   "common": {
-    "language": "Langue"
+    "language": "Langue",
+    "toggleTheme": "Changer de thème"
   }
 }

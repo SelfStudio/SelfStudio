@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "हमारे ऐप्स",
-    "learnMore": "और जानें"
+    "learnMore": "और जानें",
+    "eyebrow": "स्वतंत्र सॉफ़्टवेयर स्टूडियो",
+    "heroTitle": "छोटे सॉफ़्टवेयर, *धारदार* बनाए गए।",
+    "stats": "{count} ऐप्स · macOS और iPhone · {year} से",
+    "storeLabel": "स्टोर",
+    "storeSoon": "लाइसेंस और स्टूडियो सामान — जल्द ही।"
   },
   "app": {
     "featuresHeading": "मुख्य विशेषताएँ",
@@ -15,7 +20,8 @@
     "loadingVersion": "नवीनतम संस्करण की जाँच हो रही है…",
     "notFound": "ऐप नहीं मिला",
     "backHome": "होम",
-    "downloadApk": "APK डाउनलोड करें"
+    "downloadApk": "APK डाउनलोड करें",
+    "otherWorks": "अन्य ऐप्स"
   },
   "privacy": {
     "title": "गोपनीयता नीति",
@@ -30,6 +36,7 @@
     "contact": "संपर्क"
   },
   "common": {
-    "language": "भाषा"
+    "language": "भाषा",
+    "toggleTheme": "थीम बदलें"
   }
 }

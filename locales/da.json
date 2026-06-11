@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "Vores apps",
-    "learnMore": "Læs mere"
+    "learnMore": "Læs mere",
+    "eyebrow": "Uafhængigt softwarestudie",
+    "heroTitle": "Små programmer, bygget *skarpt*.",
+    "stats": "{count} udgivelser · macOS & iPhone · siden {year}",
+    "storeLabel": "Butik",
+    "storeSoon": "Licenser og studieartikler — snart."
   },
   "app": {
     "featuresHeading": "Vigtigste funktioner",
@@ -15,7 +20,8 @@
     "loadingVersion": "Søger efter den nyeste version…",
     "notFound": "Appen blev ikke fundet",
     "backHome": "Hjem",
-    "downloadApk": "Download APK"
+    "downloadApk": "Download APK",
+    "otherWorks": "Andre projekter"
   },
   "privacy": {
     "title": "Privatlivspolitik",
@@ -30,6 +36,7 @@
     "contact": "Kontakt"
   },
   "common": {
-    "language": "Sprog"
+    "language": "Sprog",
+    "toggleTheme": "Skift tema"
   }
 }

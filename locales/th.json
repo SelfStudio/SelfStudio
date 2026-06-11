@@ -4,7 +4,12 @@
   },
   "home": {
     "appsHeading": "แอปของเรา",
-    "learnMore": "ดูรายละเอียด"
+    "learnMore": "ดูรายละเอียด",
+    "eyebrow": "สตูดิโอซอฟต์แวร์อิสระ",
+    "heroTitle": "ซอฟต์แวร์ขนาดเล็ก สร้างมาอย่าง*คมกริบ*",
+    "stats": "{count} ผลงาน · macOS และ iPhone · ตั้งแต่ {year}",
+    "storeLabel": "ร้านค้า",
+    "storeSoon": "ไลเซนส์และสินค้าสตูดิโอ — เร็ว ๆ นี้"
   },
   "app": {
     "featuresHeading": "ฟีเจอร์หลัก",
@@ -15,7 +20,8 @@
     "loadingVersion": "กำลังตรวจสอบเวอร์ชันล่าสุด…",
     "notFound": "ไม่พบแอป",
     "backHome": "หน้าแรก",
-    "downloadApk": "ดาวน์โหลด APK"
+    "downloadApk": "ดาวน์โหลด APK",
+    "otherWorks": "ผลงานอื่น ๆ"
   },
   "privacy": {
     "title": "นโยบายความเป็นส่วนตัว",
@@ -30,6 +36,7 @@
     "contact": "ติดต่อเรา"
   },
   "common": {
-    "language": "ภาษา"
+    "language": "ภาษา",
+    "toggleTheme": "สลับธีม"
   }
 }
