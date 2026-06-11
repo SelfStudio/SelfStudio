@@ -45,28 +45,51 @@ body {
 }
 
 /* ===== Seamless page transitions (driven by next-view-transitions) ===== */
-@keyframes ss-fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/* Outgoing content drifts up and fades; incoming content slides up into
+   place with a long ease-out tail — a clear, directional motion instead of
+   a blink-fast crossfade. */
+@keyframes ss-slide-out {
+  to { opacity: 0; transform: translateY(-12px); }
 }
-@keyframes ss-fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
+@keyframes ss-slide-in {
+  from { opacity: 0; transform: translateY(18px); }
 }
+/* The root only holds the paper canvas; it stays put while the named
+   content layer (painted above the gear background) does the motion. */
 ::view-transition-old(root) {
-  animation: 320ms cubic-bezier(0.2, 0.7, 0.2, 1) both ss-fade-out;
+  animation: none;
+  opacity: 0;
 }
 ::view-transition-new(root) {
-  animation: 360ms cubic-bezier(0.2, 0.7, 0.2, 1) both ss-fade-in;
+  animation: none;
 }
-/* Shared element morph (app icon: card -> hero) */
-::view-transition-group(app-hero) {
+::view-transition-group(ss-content) {
+  animation: none;
+}
+::view-transition-old(ss-content) {
+  animation: 240ms cubic-bezier(0.4, 0, 1, 1) both ss-slide-out;
+}
+::view-transition-new(ss-content) {
+  animation: 460ms 70ms cubic-bezier(0.16, 1, 0.3, 1) both ss-slide-in;
+}
+/* Shared app icons morph between card, hero and "other works" positions
+   in both navigation directions. */
+::view-transition-group(.ss-app-icon) {
   animation-duration: 460ms;
   animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
-/* Wordmark stays anchored across navigation */
+/* Icons with no counterpart on the next page move with the page content
+   instead of lingering and fading in place. */
+::view-transition-old(.ss-app-icon):only-child {
+  animation: 240ms cubic-bezier(0.4, 0, 1, 1) both ss-slide-out;
+}
+::view-transition-new(.ss-app-icon):only-child {
+  animation: 460ms 70ms cubic-bezier(0.16, 1, 0.3, 1) both ss-slide-in;
+}
+/* Header and wordmark stay anchored across navigation */
+::view-transition-group(ss-header),
 ::view-transition-group(ss-wordmark) {
-  animation-duration: 360ms;
+  animation-duration: 300ms;
 }
 /* Gear background persists across routes: skip its snapshot crossfade so the
    live canvas keeps animating during the transition. */
@@ -80,8 +103,8 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   ::view-transition-group(*),
-  ::view-transition-old(root),
-  ::view-transition-new(root) {
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
     animation: none !important;
   }
 }

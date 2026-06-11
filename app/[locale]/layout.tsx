@@ -78,7 +78,8 @@ export default function LocaleLayout({ children, params }: Props) {
           <script dangerouslySetInnerHTML={{ __html: themeScript }} />
           {/* 三维齿轮背景放在布局层：子页面切换时不会重新挂载 WebGL 场景 */}
           <GearMovement />
-          {children}
+          {/* 内容层独立命名：其过渡组绘制在齿轮层之上，滑动动画作用于此 */}
+          <div className="[view-transition-name:ss-content]">{children}</div>
         </body>
       </html>
     </ViewTransitions>
