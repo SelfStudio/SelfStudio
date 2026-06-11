@@ -1,0 +1,35 @@
+{
+  "site": {
+    "description": "Εφαρμογές φτιαγμένες με φροντίδα για iPhone, iPad και Mac."
+  },
+  "home": {
+    "appsHeading": "Οι εφαρμογές μας",
+    "learnMore": "Μάθετε περισσότερα"
+  },
+  "app": {
+    "featuresHeading": "Κύριες λειτουργίες",
+    "screenshotsHeading": "Στιγμιότυπα οθόνης",
+    "screenshotLabel": "Στιγμιότυπο οθόνης",
+    "versionLabel": "Έκδοση",
+    "releaseDateLabel": "Ημερομηνία κυκλοφορίας",
+    "loadingVersion": "Έλεγχος για την πιο πρόσφατη έκδοση…",
+    "notFound": "Η εφαρμογή δεν βρέθηκε",
+    "backHome": "Αρχική",
+    "downloadApk": "Λήψη APK"
+  },
+  "privacy": {
+    "title": "Πολιτική απορρήτου",
+    "lastUpdated": "Τελευταία ενημέρωση",
+    "exerciseRights": "Για να ασκήσετε τα παραπάνω δικαιώματα, επικοινωνήστε μαζί μας μέσω των παρακάτω στοιχείων επικοινωνίας.",
+    "emailLabel": "Email",
+    "addressLabel": "Διεύθυνση",
+    "back": "Πίσω"
+  },
+  "footer": {
+    "rights": "Με την επιφύλαξη παντός δικαιώματος.",
+    "contact": "Επικοινωνία"
+  },
+  "common": {
+    "language": "Γλώσσα"
+  }
+}

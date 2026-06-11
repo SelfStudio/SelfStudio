@@ -1,0 +1,35 @@
+{
+  "site": {
+    "description": "Aplikace pečlivě vytvořené pro iPhone, iPad a Mac."
+  },
+  "home": {
+    "appsHeading": "Naše aplikace",
+    "learnMore": "Zjistit více"
+  },
+  "app": {
+    "featuresHeading": "Hlavní funkce",
+    "screenshotsHeading": "Snímky obrazovky",
+    "screenshotLabel": "Snímek obrazovky",
+    "versionLabel": "Verze",
+    "releaseDateLabel": "Datum vydání",
+    "loadingVersion": "Zjišťování nejnovější verze…",
+    "notFound": "Aplikace nenalezena",
+    "backHome": "Domů",
+    "downloadApk": "Stáhnout APK"
+  },
+  "privacy": {
+    "title": "Zásady ochrany osobních údajů",
+    "lastUpdated": "Poslední aktualizace",
+    "exerciseRights": "Chcete-li uplatnit výše uvedená práva, kontaktujte nás prostřednictvím níže uvedených kontaktních údajů.",
+    "emailLabel": "E-mail",
+    "addressLabel": "Adresa",
+    "back": "Zpět"
+  },
+  "footer": {
+    "rights": "Všechna práva vyhrazena.",
+    "contact": "Kontakt"
+  },
+  "common": {
+    "language": "Jazyk"
+  }
+}

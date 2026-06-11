@@ -1,0 +1,35 @@
+{
+  "site": {
+    "description": "iPhone, iPad ve Mac için özenle hazırlanmış uygulamalar."
+  },
+  "home": {
+    "appsHeading": "Uygulamalarımız",
+    "learnMore": "Daha fazla bilgi"
+  },
+  "app": {
+    "featuresHeading": "Temel Özellikler",
+    "screenshotsHeading": "Ekran Görüntüleri",
+    "screenshotLabel": "Ekran görüntüsü",
+    "versionLabel": "Sürüm",
+    "releaseDateLabel": "Yayınlanma tarihi",
+    "loadingVersion": "En son sürüm denetleniyor…",
+    "notFound": "Uygulama bulunamadı",
+    "backHome": "Ana Sayfa",
+    "downloadApk": "APK indir"
+  },
+  "privacy": {
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son güncelleme",
+    "exerciseRights": "Yukarıdaki hakları kullanmak için lütfen aşağıdaki iletişim bilgileri üzerinden bize ulaşın.",
+    "emailLabel": "E-posta",
+    "addressLabel": "Adres",
+    "back": "Geri"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır.",
+    "contact": "İletişim"
+  },
+  "common": {
+    "language": "Dil"
+  }
+}

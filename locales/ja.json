@@ -1,0 +1,35 @@
+{
+  "site": {
+    "description": "iPhone・iPad・Mac のために丁寧につくられたアプリ。"
+  },
+  "home": {
+    "appsHeading": "アプリ一覧",
+    "learnMore": "詳しく見る"
+  },
+  "app": {
+    "featuresHeading": "主な機能",
+    "screenshotsHeading": "スクリーンショット",
+    "screenshotLabel": "スクリーンショット",
+    "versionLabel": "バージョン",
+    "releaseDateLabel": "リリース日",
+    "loadingVersion": "最新バージョンを確認中…",
+    "notFound": "アプリが見つかりません",
+    "backHome": "ホーム",
+    "downloadApk": "APK をダウンロード"
+  },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "lastUpdated": "最終更新日",
+    "exerciseRights": "上記の権利を行使するには、以下の連絡先までお問い合わせください。",
+    "emailLabel": "メール",
+    "addressLabel": "住所",
+    "back": "戻る"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "contact": "お問い合わせ"
+  },
+  "common": {
+    "language": "言語"
+  }
+}

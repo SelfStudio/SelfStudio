@@ -1,0 +1,35 @@
+{
+  "site": {
+    "description": "Appar gjorda med omsorg för iPhone, iPad och Mac."
+  },
+  "home": {
+    "appsHeading": "Våra appar",
+    "learnMore": "Läs mer"
+  },
+  "app": {
+    "featuresHeading": "Huvudfunktioner",
+    "screenshotsHeading": "Skärmbilder",
+    "screenshotLabel": "Skärmbild",
+    "versionLabel": "Version",
+    "releaseDateLabel": "Utgivningsdatum",
+    "loadingVersion": "Söker efter senaste versionen…",
+    "notFound": "Appen hittades inte",
+    "backHome": "Hem",
+    "downloadApk": "Ladda ned APK"
+  },
+  "privacy": {
+    "title": "Integritetspolicy",
+    "lastUpdated": "Senast uppdaterad",
+    "exerciseRights": "För att utöva ovanstående rättigheter, kontakta oss via kontaktuppgifterna nedan.",
+    "emailLabel": "E-post",
+    "addressLabel": "Adress",
+    "back": "Tillbaka"
+  },
+  "footer": {
+    "rights": "Alla rättigheter förbehålls.",
+    "contact": "Kontakt"
+  },
+  "common": {
+    "language": "Språk"
+  }
+}
