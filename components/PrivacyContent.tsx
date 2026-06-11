@@ -1,73 +1,12 @@
-import { Metadata } from "next";
-import Link from "next/link";
-import config, { AppConfig } from "@/lib/config";
-import { getLocale } from "@/lib/locales";
-import { getDictionary } from "@/lib/i18n";
-import { languageAlternates } from "@/lib/alternates";
+"use client";
 
-type Props = {
-  params: {
-    locale: string;
-    appId: string;
-  };
-};
+import { Link } from "next-view-transitions";
+import config from "@/lib/config";
+import { useI18n } from "./I18nProvider";
 
-export async function generateStaticParams() {
-  return config.apps.map((app) => ({
-    appId: app.id,
-  }));
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const locale = getLocale(params.locale)!;
-  const dict = getDictionary(locale);
-  const app = config.apps.find((app) => app.id === params.appId);
-  if (!app) {
-    return {
-      title: "Privacy Policy Not Found",
-    };
-  }
-
-  return {
-    title: `${app.name} ${dict.privacy.title}`,
-    description: `${app.name} Privacy Policy details how we collect, use, and protect your personal information.`,
-    keywords: ["privacy", "policy", app.name, "data protection", "personal information"],
-    alternates: {
-      canonical: `/${locale.slug}/${app.id}/privacy/`,
-      languages: languageAlternates(`/${app.id}/privacy/`),
-    },
-    openGraph: {
-      title: `${app.name} ${dict.privacy.title} - ${config.site.title}`,
-      description: `${app.name} Privacy Policy details how we collect, use, and protect your personal information.`,
-      type: "article",
-      url: `${config.site.url || "https://selfstudio.fun"}/${locale.slug}/${app.id}/privacy/`,
-    },
-    twitter: {
-      card: "summary",
-      title: `${app.name} ${dict.privacy.title} - ${config.site.title}`,
-      description: `${app.name} Privacy Policy details how we collect, use, and protect your personal information.`,
-    },
-  };
-}
-
-export default function PrivacyPolicy({ params }: Props) {
-  const locale = getLocale(params.locale)!;
-  const dict = getDictionary(locale);
-  const app = config.apps.find((app) => app.id === params.appId) as AppConfig;
-
-  if (!app) {
-    return (
-      <main className="flex min-h-[60vh] items-center justify-center">
-        <div className="text-center">
-          <h1 className="mb-4 text-2xl font-bold">{dict.app.notFound}</h1>
-          <Link href={`/${locale.slug}/`} className="text-orange-500 hover:text-orange-600">
-            {dict.app.backHome}
-          </Link>
-        </div>
-      </main>
-    );
-  }
-
+export default function PrivacyContent({ appId }: { appId: string }) {
+  const { dict } = useI18n();
+  const app = config.apps.find((a) => a.id === appId)!;
   const privacyPolicy = app.privacyPolicy;
 
   return (
@@ -75,8 +14,8 @@ export default function PrivacyPolicy({ params }: Props) {
       <div className="mx-auto max-w-3xl">
         <nav className="mb-10 text-sm">
           <Link
-            href={`/${locale.slug}/${app.id}/`}
-            className="inline-flex items-center gap-1.5 text-gray-500 transition-colors hover:text-orange-500 dark:text-gray-400"
+            href={`/${app.id}/`}
+            className="inline-flex items-center gap-1.5 text-gray-500 transition-colors hover:text-terracotta dark:text-gray-400"
           >
             <span aria-hidden className="rtl:rotate-180">←</span>
             {dict.privacy.back}
@@ -88,6 +27,10 @@ export default function PrivacyPolicy({ params }: Props) {
             src={app.icon}
             alt=""
             className="h-14 w-14 rounded-2xl object-contain shadow-md"
+            style={{
+              viewTransitionName: `app-icon-${app.id}`,
+              viewTransitionClass: "ss-app-icon",
+            } as React.CSSProperties}
           />
           <div>
             <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl">
@@ -150,7 +93,7 @@ export default function PrivacyPolicy({ params }: Props) {
             {dict.privacy.emailLabel}:{" "}
             <a
               href={`mailto:${privacyPolicy.contactUs.email}`}
-              className="text-orange-500 hover:text-orange-600"
+              className="text-terracotta hover:underline"
             >
               {privacyPolicy.contactUs.email}
             </a>

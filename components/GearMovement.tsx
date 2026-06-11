@@ -383,8 +383,10 @@ export default function GearMovement() {
   }, []);
 
   return (
-    // 独立的 view-transition 组：路由切换时 canvas 不参与根快照、持续实时渲染
-    <div aria-hidden className="fixed inset-0 -z-10 pointer-events-none [view-transition-name:ss-gears]">
+    // 独立的 view-transition 组：路由切换时 canvas 不参与根快照、持续实时渲染。
+    // 用显式 z-0（内容层 z-10 盖在上面）替代负 z-index，避免部分浏览器里
+    // body 背景绘制顺序差异导致背景被遮挡。
+    <div aria-hidden className="fixed inset-0 z-0 pointer-events-none [view-transition-name:ss-gears]">
       <div ref={mountRef} className="absolute inset-0" />
       {/* readability veil over the movement */}
       <div

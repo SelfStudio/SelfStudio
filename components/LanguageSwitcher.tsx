@@ -1,32 +1,14 @@
 'use client';
 
-import { usePathname, useRouter } from "next/navigation";
+import { useI18n } from "./I18nProvider";
 import { locales } from "@/lib/locales";
 
-type LanguageSwitcherProps = {
-  currentSlug: string;
-  label: string;
-};
-
-export const LOCALE_STORAGE_KEY = "selfstudio-locale";
-
-export default function LanguageSwitcher({ currentSlug, label }: LanguageSwitcherProps) {
-  const pathname = usePathname();
-  const router = useRouter();
-
-  const switchLocale = (slug: string) => {
-    try {
-      localStorage.setItem(LOCALE_STORAGE_KEY, slug);
-    } catch {
-      // localStorage 不可用时仅做跳转
-    }
-    const rest = pathname.replace(/^\/[^/]+/, "") || "/";
-    router.push(`/${slug}${rest}`);
-  };
+export default function LanguageSwitcher() {
+  const { locale, dict, setLocale } = useI18n();
 
   return (
     <label className="inline-flex items-center gap-2 text-sm text-ink-2">
-      <span className="sr-only">{label}</span>
+      <span className="sr-only">{dict.common.language}</span>
       <svg
         aria-hidden="true"
         className="h-4 w-4 shrink-0"
@@ -42,13 +24,13 @@ export default function LanguageSwitcher({ currentSlug, label }: LanguageSwitche
         />
       </svg>
       <select
-        value={currentSlug}
-        onChange={(e) => switchLocale(e.target.value)}
+        value={locale.slug}
+        onChange={(e) => setLocale(e.target.value)}
         className="max-w-[11rem] cursor-pointer appearance-none rounded-md border border-hairline-2 bg-paper-2 px-3 py-1.5 text-sm text-ink shadow-sm backdrop-blur transition-colors hover:border-terracotta focus:border-terracotta focus:outline-none"
       >
-        {locales.map((locale) => (
-          <option key={locale.slug} value={locale.slug}>
-            {locale.nativeName}
+        {locales.map((l) => (
+          <option key={l.slug} value={l.slug}>
+            {l.nativeName}
           </option>
         ))}
       </select>
