@@ -117,7 +117,11 @@ export default function AppPage({ params }: Props) {
             <img
               src={app.icon}
               alt={app.name}
-              className="h-[74px] w-[74px] rounded-[17px] border border-hairline bg-white object-contain [view-transition-name:app-hero]"
+              className="h-[74px] w-[74px] rounded-[17px] border border-hairline bg-white object-contain"
+              style={{
+                viewTransitionName: `app-icon-${app.id}`,
+                viewTransitionClass: "ss-app-icon",
+              } as React.CSSProperties}
             />
             <div className="flex flex-col gap-2">
               <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-3">
@@ -232,6 +236,10 @@ export default function AppPage({ params }: Props) {
                       src={other.icon}
                       alt={other.name}
                       className="h-[52px] w-[52px] rounded-[13px] border border-hairline bg-white object-contain"
+                      style={{
+                        viewTransitionName: `app-icon-${other.id}`,
+                        viewTransitionClass: "ss-app-icon",
+                      } as React.CSSProperties}
                     />
                     <div className="flex flex-col gap-1">
                       <span className="text-[18px] font-semibold">{other.name}</span>

@@ -23,7 +23,7 @@ export default function SiteHeader({
   const homeHref = `/${localeSlug}/`;
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-hairline backdrop-blur-md"
+    <nav className="sticky top-0 z-50 border-b border-hairline backdrop-blur-md [view-transition-name:ss-header]"
       style={{ background: "color-mix(in srgb, var(--paper) 64%, transparent)" }}
     >
       <div className="max-w-[1160px] mx-auto px-10 py-3.5 flex items-center gap-7">
